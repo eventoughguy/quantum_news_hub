@@ -1,0 +1,1 @@
+web: cd project/news_agent && gunicorn --bind 0.0.0.0:$PORT enhanced_app:app

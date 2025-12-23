@@ -1,0 +1,41 @@
+# Quantum News Agent Requirements
+
+# Web framework
+flask==3.1.1
+gunicorn==21.2.0
+
+# Environment variables
+python-dotenv==1.0.0
+
+# RSS parsing
+feedparser==6.0.11
+
+# News extraction
+newspaper3k==0.2.8
+
+# HTTP requests
+requests==2.32.3
+
+# Scheduling
+schedule==1.2.2
+apscheduler==3.11.0
+
+# Google AI/LLM dependencies
+google-genai
+google-adk-agents
+google-adk-sessions
+google-adk-runners
+
+# RDF and ontology processing
+rdflib==6.2.0
+
+# Data processing
+# sqlite3  # Built into Python
+
+# Logging and utilities
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Optional: Development dependencies
+# pytest==7.4.0
+# pytest-asyncio==0.21.0

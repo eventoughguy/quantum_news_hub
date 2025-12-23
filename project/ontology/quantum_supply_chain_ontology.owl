@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:qsc="http://quantum-supply-chain.org/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#wireType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>wireType</rdfs:label>
+    <rdfs:comment>Type of superconducting wire</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#materialType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>materialType</rdfs:label>
+    <rdfs:comment>Type of material (e.g., NbTi, Nb₃Sn, MgB₂)</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#SuperPower_Inc___USA_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <qsc:name>SuperPower Inc. (USA)</qsc:name>
+    <qsc:notes>HTS tape supplier for high-field magnets and cryogenic systems</qsc:notes>
+    <qsc:country>USA</qsc:country>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Tokamak"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Energy"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#DOE_funded"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#quantum"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#labs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>Quantum Computing Supply Chain Ontology</rdfs:label>
+    <rdfs:comment>Ontology for quantum computing supply chain based on real industry data, covering hardware companies, component suppliers, software providers, and their relationships.</rdfs:comment>
+    <owl:versionInfo>1.0</owl:versionInfo>
+    <rdfs:seeAlso rdf:resource="http://quantum-supply-chain.org/data-schema"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#labs">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Sam_Dong_Inc___USA_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Accurate_Wire__USA_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Sumitomo_Electric_Industries__Ltd___Japan_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#SuperPower_Inc___USA_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#NEXANS__France_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Western_Superconducting_Technologies_Co___Ltd___China_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#JASTEC__Japan_Superconductor_Tech_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Quantum">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Accurate_Wire__USA_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#NEXANS__France_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Western_Superconducting_Technologies_Co___Ltd___China_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Superconductor_Technologies_Inc_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Rigetti_Computing">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"/>
+    <qsc:name>Rigetti Computing</qsc:name>
+    <qsc:usesModality rdf:resource="http://quantum-supply-chain.org/ontology#SuperconductingQubit"/>
+    <qsc:lastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-16T17:14:27.772526</qsc:lastUpdated>
+    <qsc:lastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-16T17:14:27.775927</qsc:lastUpdated>
+    <qsc:country>USA</qsc:country>
+    <qsc:modalities>['SuperconductingQubit']</qsc:modalities>
+    <qsc:description>Full-stack quantum computing</qsc:description>
+    <qsc:website>https://rigetti.com</qsc:website>
+    <qsc:founded_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</qsc:founded_year>
+    <qsc:qubit_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</qsc:qubit_count>
+    <qsc:cloud_service rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</qsc:cloud_service>
+    <qsc:platforms>['Quantum Cloud Services']</qsc:platforms>
+    <qsc:notes>nan</qsc:notes>
+    <qsc:last_updated>2025-09-16T17:14:27.763240</qsc:last_updated>
+    <qsc:data_source>Excel update</qsc:data_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Superconductor_Technologies_Inc_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <qsc:name>Superconductor Technologies Inc.</qsc:name>
+    <qsc:notes>Develops HTS materials for quantum chip fabrication</qsc:notes>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Seeqc"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Origin"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Quantum"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#SpinQ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Strangeworks">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#SoftwareCompany"/>
+    <qsc:name>Strangeworks</qsc:name>
+    <qsc:notes>Quantum-as-a-service platform with multi-hardware support</qsc:notes>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Aggregates"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#access"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#IBM"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#IonQ"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Rigetti"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#D_Wave"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#currentCapacity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>currentCapacity</rdfs:label>
+    <rdfs:comment>Current carrying capacity</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Cirq">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#SoftwareCompany"/>
+    <qsc:name>Cirq</qsc:name>
+    <qsc:company>Google</qsc:company>
+    <qsc:product_type>SDK</qsc:product_type>
+    <qsc:programming_languages>['Python']</qsc:programming_languages>
+    <qsc:supported_hardware>['Google quantum processors']</qsc:supported_hardware>
+    <qsc:license>Open Source</qsc:license>
+    <qsc:website>https://quantumai.google/cirq</qsc:website>
+    <qsc:github>https://github.com/quantumlib/Cirq</qsc:github>
+    <qsc:description>Python framework for quantum circuits</qsc:description>
+    <qsc:notes>Focus on Google hardware</qsc:notes>
+    <qsc:last_updated>2025-09-16T17:14:27.763553</qsc:last_updated>
+    <qsc:data_source>Excel update</qsc:data_source>
+    <qsc:lastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-16T17:14:27.776787</qsc:lastUpdated>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Qu&amp;Co__merged_with_Pasqal_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#SoftwareCompany"/>
+    <qsc:name>Qu&amp;Co (merged with Pasqal)</qsc:name>
+    <qsc:notes>Develops quantum simulation tools for chemistry and physics</qsc:notes>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Pasqal"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#_Neutral"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#atoms_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#QuantumModality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>QuantumModality</rdfs:label>
+    <rdfs:comment>Different approaches to quantum computing</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#IBM_Quantum">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"/>
+    <qsc:usesModality rdf:resource="http://quantum-supply-chain.org/ontology#SuperconductingQubit"/>
+    <qsc:name>IBM Quantum</qsc:name>
+    <qsc:country>USA</qsc:country>
+    <qsc:modalities>['SuperconductingQubit']</qsc:modalities>
+    <qsc:description>Leading quantum computing platform</qsc:description>
+    <qsc:website>https://quantum.ibm.com</qsc:website>
+    <qsc:founded_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1911</qsc:founded_year>
+    <qsc:qubit_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</qsc:qubit_count>
+    <qsc:cloud_service rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</qsc:cloud_service>
+    <qsc:platforms>['IBM Quantum Network']</qsc:platforms>
+    <qsc:notes>nan</qsc:notes>
+    <qsc:last_updated>2025-09-16T17:14:27.763092</qsc:last_updated>
+    <qsc:data_source>Excel update</qsc:data_source>
+    <qsc:lastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-16T17:14:27.775546</qsc:lastUpdated>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Country">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Country</rdfs:label>
+    <rdfs:comment>Country where organization is located</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#Region"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#productType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>productType</rdfs:label>
+    <rdfs:comment>Type of product or service</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#SuperPower_Inc_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <qsc:name>SuperPower Inc.</qsc:name>
+    <qsc:country>USA</qsc:country>
+    <qsc:component_types>HTS tape, high-field magnets</qsc:component_types>
+    <qsc:materials_supplied>YBCO tape, superconducting wire</qsc:materials_supplied>
+    <qsc:clients>['Tokamak Energy', 'DOE labs']</qsc:clients>
+    <qsc:applications>High-field systems, cryogenics</qsc:applications>
+    <qsc:website>https://superpower-inc.com</qsc:website>
+    <qsc:technical_specs>High current capacity</qsc:technical_specs>
+    <qsc:notes>$80M DOE support</qsc:notes>
+    <qsc:last_updated>2025-09-16T17:14:27.763446</qsc:last_updated>
+    <qsc:data_source>Excel update</qsc:data_source>
+    <qsc:lastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-16T17:14:27.776378</qsc:lastUpdated>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#employeeCount">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>employeeCount</rdfs:label>
+    <rdfs:comment>Number of employees</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Classiq">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#SoftwareCompany"/>
+    <qsc:name>Classiq</qsc:name>
+    <qsc:notes>High-level quantum algorithm synthesis platform</qsc:notes>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#IBM"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#IonQ"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Quantinuum"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Rigetti"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#IBM">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"/>
+    <qsc:name>IBM</qsc:name>
+    <qsc:usesModality rdf:resource="http://quantum-supply-chain.org/ontology#SuperconductingQubit"/>
+    <qsc:lastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-16T17:14:27.772083</qsc:lastUpdated>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Super_Conductor_Materials__Inc___USA_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Sam_Dong_Inc___USA_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Accurate_Wire__USA_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Hyper_Tech_Research__Inc___USA_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#companyStage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>companyStage</rdfs:label>
+    <rdfs:comment>Company stage (startup, established, etc.)</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Forest_SDK">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#SoftwareCompany"/>
+    <qsc:name>Forest SDK</qsc:name>
+    <qsc:company>Rigetti</qsc:company>
+    <qsc:product_type>SDK</qsc:product_type>
+    <qsc:programming_languages>['Python']</qsc:programming_languages>
+    <qsc:supported_hardware>['Rigetti systems']</qsc:supported_hardware>
+    <qsc:license>Open Source</qsc:license>
+    <qsc:website>https://rigetti.com/forest</qsc:website>
+    <qsc:github>https://github.com/rigetti</qsc:github>
+    <qsc:description>Quantum-classical hybrid computing</qsc:description>
+    <qsc:notes>Hybrid workflows</qsc:notes>
+    <qsc:last_updated>2025-09-16T17:14:27.763586</qsc:last_updated>
+    <qsc:data_source>Excel update</qsc:data_source>
+    <qsc:lastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-16T17:14:27.777041</qsc:lastUpdated>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#usesModality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>usesModality</rdfs:label>
+    <rdfs:comment>Hardware company uses specific quantum modality</rdfs:comment>
+    <rdfs:domain rdf:resource="http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"/>
+    <rdfs:range rdf:resource="http://quantum-supply-chain.org/ontology#QuantumModality"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#region">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>region</rdfs:label>
+    <rdfs:comment>Geographic region</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Sam_Dong_Inc___USA_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <qsc:name>Sam Dong Inc. (USA)</qsc:name>
+    <qsc:notes>Manufactures MgB₂ wire used in cryogenic systems and superconducting magnets</qsc:notes>
+    <qsc:country>USA</qsc:country>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Likely:"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#D_Wave"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#IBM"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#national"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#labs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Google_Quantum_AI">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"/>
+    <qsc:name>Google Quantum AI</qsc:name>
+    <qsc:usesModality rdf:resource="http://quantum-supply-chain.org/ontology#SuperconductingQubit"/>
+    <qsc:lastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-16T17:14:27.772317</qsc:lastUpdated>
+    <qsc:lastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-16T17:14:27.775746</qsc:lastUpdated>
+    <qsc:country>USA</qsc:country>
+    <qsc:modalities>['SuperconductingQubit']</qsc:modalities>
+    <qsc:description>Quantum AI research and platforms</qsc:description>
+    <qsc:website>https://quantumai.google</qsc:website>
+    <qsc:founded_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</qsc:founded_year>
+    <qsc:qubit_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</qsc:qubit_count>
+    <qsc:cloud_service rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</qsc:cloud_service>
+    <qsc:platforms>['Google Quantum AI']</qsc:platforms>
+    <qsc:notes>nan</qsc:notes>
+    <qsc:last_updated>2025-09-16T17:14:27.763180</qsc:last_updated>
+    <qsc:data_source>Excel update</qsc:data_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#QuantumAnnealing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>QuantumAnnealing</rdfs:label>
+    <rdfs:comment>Quantum annealing technology</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#QuantumModality"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#CryogenicComponent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>CryogenicComponent</rdfs:label>
+    <rdfs:comment>Components for cryogenic cooling systems</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#Component"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#suppliesComponentTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>suppliesComponentTo</rdfs:label>
+    <rdfs:comment>Component supplier provides components to hardware company</rdfs:comment>
+    <rdfs:domain rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <rdfs:range rdf:resource="http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#evico_GmbH__Germany_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <qsc:name>evico GmbH (Germany)</qsc:name>
+    <qsc:notes>Specializes in magnetic shielding and cryogenic bearings</qsc:notes>
+    <qsc:country>Germany</qsc:country>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Research"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#institutions"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#cryogenic"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#system"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#integrators"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Sumitomo_Electric_Industries">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <qsc:name>Sumitomo Electric Industries</qsc:name>
+    <qsc:country>Japan</qsc:country>
+    <qsc:component_types>HTS wire</qsc:component_types>
+    <qsc:materials_supplied>HTS wire, Nb₃Sn</qsc:materials_supplied>
+    <qsc:clients>['Pasqal', 'Japanese labs']</qsc:clients>
+    <qsc:applications>Quantum logistics, magnets</qsc:applications>
+    <qsc:website>https://global-sei.com</qsc:website>
+    <qsc:technical_specs>HTS wire optimization</qsc:technical_specs>
+    <qsc:notes>Partnership with Pasqal</qsc:notes>
+    <qsc:last_updated>2025-09-16T17:14:27.763411</qsc:last_updated>
+    <qsc:data_source>Excel update</qsc:data_source>
+    <qsc:lastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-16T17:14:27.776227</qsc:lastUpdated>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#requiresComponent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>requiresComponent</rdfs:label>
+    <rdfs:comment>Platform requires specific component</rdfs:comment>
+    <rdfs:domain rdf:resource="http://quantum-supply-chain.org/ontology#QuantumPlatform"/>
+    <rdfs:range rdf:resource="http://quantum-supply-chain.org/ontology#Component"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Hitachi__Ltd_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <qsc:name>Hitachi, Ltd.</qsc:name>
+    <qsc:notes>Hitachi develops its own quantum computing platforms</qsc:notes>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Internal"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#quantum"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#R&amp;D"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Partnership">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Partnership</rdfs:label>
+    <rdfs:comment>Business partnership between organizations</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Accurate_Wire__USA_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <qsc:name>Accurate Wire (USA)</qsc:name>
+    <qsc:notes>Produces NbTi and Nb₃Sn wire used in superconducting circuits</qsc:notes>
+    <qsc:country>USA</qsc:country>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Likely:"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#IBM"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Quantum"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Design"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#research"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#labs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Western_Superconducting_Technologies_Co___Ltd___China_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <qsc:name>Western Superconducting Technologies Co., Ltd. (China)</qsc:name>
+    <qsc:notes>Major supplier of NbTi/Nb₃Sn wire for superconducting quantum chips</qsc:notes>
+    <qsc:country>China</qsc:country>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Origin"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Quantum"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Chinese"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#national"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#labs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#PennyLane__Xanadu_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#QuantumSDK"/>
+    <qsc:name>PennyLane (Xanadu)</qsc:name>
+    <qsc:notes>Focuses on quantum machine learning and hybrid workflows</qsc:notes>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Xanadu"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#_Photonic_"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#also"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#supports"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#IBM"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#IonQ"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Rigetti"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#MetOx_Technologies__Inc_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <qsc:name>MetOx Technologies, Inc.</qsc:name>
+    <qsc:notes>HTS wire supplier with $80M DOE support for quantum-related use</qsc:notes>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#DOE_funded"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#quantum"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#infrastructure"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#projects"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#operationalStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>operationalStatus</rdfs:label>
+    <rdfs:comment>Current operational status</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Forest_SDK__Rigetti_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#QuantumSDK"/>
+    <qsc:name>Forest SDK (Rigetti)</qsc:name>
+    <qsc:notes>Includes Quil language and tools for hybrid quantum-classical tasks</qsc:notes>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Rigetti"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#_Superconducting"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#qubits_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Aliro_Quantum">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#SoftwareCompany"/>
+    <qsc:name>Aliro Quantum</qsc:name>
+    <qsc:notes>Emphasizes quantum networking and hybrid execution</qsc:notes>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Supports"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#IBM"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#IonQ"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Rigetti"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Honeywell"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#marketFocus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>marketFocus</rdfs:label>
+    <rdfs:comment>Primary market focus</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#NEXANS__France_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <qsc:name>NEXANS (France)</qsc:name>
+    <qsc:notes>Provides superconducting cables for energy and data centers</qsc:notes>
+    <qsc:country>France</qsc:country>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Indirect:"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Quantum"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#labs"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#infrastructure"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#providers"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#dataSource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>dataSource</rdfs:label>
+    <rdfs:comment>Source of the information</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#QuantumChip">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>QuantumChip</rdfs:label>
+    <rdfs:comment>Quantum processing unit or chip</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#Component"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Pasqal">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Sumitomo_Electric_Industries__Ltd___Japan_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Sumitomo_Electric_Industries__Ltd___Japan_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <qsc:name>Sumitomo Electric Industries, Ltd. (Japan)</qsc:name>
+    <qsc:notes>Supplies HTS wire and supports quantum logistics optimization</qsc:notes>
+    <qsc:country>Japan</qsc:country>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Partner:"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Pasqal"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#_France_"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Japanese"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#quantum"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#labs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Wire">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Wire</rdfs:label>
+    <rdfs:comment>Specialized wire for quantum applications</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#Component"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#SupplyRelationship">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>SupplyRelationship</rdfs:label>
+    <rdfs:comment>Supply relationship between companies</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#QuantumHardwareCompany">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>QuantumHardwareCompany</rdfs:label>
+    <rdfs:comment>Company developing quantum computing hardware</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#JASTEC__Japan_Superconductor_Tech_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <qsc:name>JASTEC (Japan Superconductor Tech)</qsc:name>
+    <qsc:notes>Manufactures superconducting wire for magnets and cryogenic systems</qsc:notes>
+    <qsc:country>Japan</qsc:country>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Likely:"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Hitachi"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Japanese"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#labs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#QunaSys">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#SoftwareCompany"/>
+    <qsc:name>QunaSys</qsc:name>
+    <qsc:notes>Focused on quantum chemistry and enterprise solutions</qsc:notes>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#IBM"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Rigetti"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#IonQ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Qiskit__IBM_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#QuantumSDK"/>
+    <qsc:name>Qiskit (IBM)</qsc:name>
+    <qsc:notes>Open-source SDK for IBM’s superconducting quantum processors</qsc:notes>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#IBM"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Quantum"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#_Superconducting"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#qubits_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#research">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Accurate_Wire__USA_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Cirq__Google_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#QuantumSDK"/>
+    <qsc:name>Cirq (Google)</qsc:name>
+    <qsc:notes>Python framework for Google’s Sycamore and Bristlecone chips</qsc:notes>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Google"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Quantum"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#_Superconducting"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#qubits_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#clientOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>clientOf</rdfs:label>
+    <rdfs:comment>Organization is client of supplier</rdfs:comment>
+    <rdfs:domain rdf:resource="http://quantum-supply-chain.org/ontology#Organization"/>
+    <rdfs:range rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#quantum">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Sumitomo_Electric_Industries__Ltd___Japan_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#SuperPower_Inc___USA_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Hitachi__Ltd_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#MetOx_Technologies__Inc_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#SoftwareCompany">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>SoftwareCompany</rdfs:label>
+    <rdfs:comment>Company developing quantum software/SDKs</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Region">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Region</rdfs:label>
+    <rdfs:comment>Geographic region</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#lastUpdated">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>lastUpdated</rdfs:label>
+    <rdfs:comment>Last time information was updated</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Q#__Microsoft_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#SoftwareCompany"/>
+    <qsc:name>Q# (Microsoft)</qsc:name>
+    <qsc:notes>Language for quantum development; integrates with multiple backends</qsc:notes>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Azure"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Quantum"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#_Simulators"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#IonQ"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Quantinuum"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Pasqal_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#SuperconductingMaterial">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>SuperconductingMaterial</rdfs:label>
+    <rdfs:comment>Materials used in superconducting quantum systems</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#Component"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#QCI">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"/>
+    <qsc:name>QCI</qsc:name>
+    <qsc:usesModality rdf:resource="http://quantum-supply-chain.org/ontology#SuperconductingQubit"/>
+    <qsc:lastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-16T17:14:27.773008</qsc:lastUpdated>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Northrop_Grumman">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"/>
+    <qsc:name>Northrop Grumman</qsc:name>
+    <qsc:usesModality rdf:resource="http://quantum-supply-chain.org/ontology#SuperconductingQubit"/>
+    <qsc:lastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-16T17:14:27.773294</qsc:lastUpdated>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Research">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#evico_GmbH__Germany_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Hitachi">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#JASTEC__Japan_Superconductor_Tech_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#supportsHardware">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>supportsHardware</rdfs:label>
+    <rdfs:comment>SDK supports specific hardware platform</rdfs:comment>
+    <rdfs:domain rdf:resource="http://quantum-supply-chain.org/ontology#QuantumSDK"/>
+    <rdfs:range rdf:resource="http://quantum-supply-chain.org/ontology#QuantumPlatform"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#TrappedIon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>TrappedIon</rdfs:label>
+    <rdfs:comment>Trapped ion quantum computing technology</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#QuantumModality"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Super_Conductor_Materials__Inc___USA_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <qsc:name>Super Conductor Materials, Inc. (USA)</qsc:name>
+    <qsc:notes>Supplies sputtering targets for thin-film superconducting qubits</qsc:notes>
+    <qsc:country>USA</qsc:country>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#IBM"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Google"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Rigetti"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Seeqc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Cable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Cable</rdfs:label>
+    <rdfs:comment>Cables for quantum systems</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#Component"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#developsSDK">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>developsSDK</rdfs:label>
+    <rdfs:comment>Software company develops SDK</rdfs:comment>
+    <rdfs:domain rdf:resource="http://quantum-supply-chain.org/ontology#SoftwareCompany"/>
+    <rdfs:range rdf:resource="http://quantum-supply-chain.org/ontology#QuantumSDK"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#MaterialsCompany">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>MaterialsCompany</rdfs:label>
+    <rdfs:comment>Company supplying raw materials for quantum hardware</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#foundedYear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>foundedYear</rdfs:label>
+    <rdfs:comment>Year company was founded</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#country">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>country</rdfs:label>
+    <rdfs:comment>Country of origin/operation</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#IQM">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"/>
+    <qsc:name>IQM</qsc:name>
+    <qsc:usesModality rdf:resource="http://quantum-supply-chain.org/ontology#SuperconductingQubit"/>
+    <qsc:lastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-16T17:14:27.773514</qsc:lastUpdated>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#PhotonicQuantum">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>PhotonicQuantum</rdfs:label>
+    <rdfs:comment>Photonic quantum computing technology</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#QuantumModality"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Seeqc">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Super_Conductor_Materials__Inc___USA_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Superconductor_Technologies_Inc_"/>
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"/>
+    <qsc:name>Seeqc</qsc:name>
+    <qsc:usesModality rdf:resource="http://quantum-supply-chain.org/ontology#SuperconductingQubit"/>
+    <qsc:lastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-16T17:14:27.772756</qsc:lastUpdated>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#license">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>license</rdfs:label>
+    <rdfs:comment>Software license type</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#locatedIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>locatedIn</rdfs:label>
+    <rdfs:comment>Organization is located in country</rdfs:comment>
+    <rdfs:domain rdf:resource="http://quantum-supply-chain.org/ontology#Organization"/>
+    <rdfs:range rdf:resource="http://quantum-supply-chain.org/ontology#Country"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Internal">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Hitachi__Ltd_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Tape">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Tape</rdfs:label>
+    <rdfs:comment>High-temperature superconducting tape</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#Component"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Qiskit">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#SoftwareCompany"/>
+    <qsc:name>Qiskit</qsc:name>
+    <qsc:company>IBM</qsc:company>
+    <qsc:product_type>SDK</qsc:product_type>
+    <qsc:programming_languages>['Python']</qsc:programming_languages>
+    <qsc:supported_hardware>['IBM Quantum']</qsc:supported_hardware>
+    <qsc:license>Open Source</qsc:license>
+    <qsc:website>https://qiskit.org</qsc:website>
+    <qsc:github>https://github.com/Qiskit</qsc:github>
+    <qsc:description>Open-source quantum computing SDK</qsc:description>
+    <qsc:notes>Most popular quantum SDK</qsc:notes>
+    <qsc:last_updated>2025-09-16T17:14:27.763517</qsc:last_updated>
+    <qsc:data_source>Excel update</qsc:data_source>
+    <qsc:lastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-16T17:14:27.776528</qsc:lastUpdated>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#notes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>notes</rdfs:label>
+    <rdfs:comment>Additional notes or details</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Hyper_Tech_Research__Inc___USA_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <qsc:name>Hyper Tech Research, Inc. (USA)</qsc:name>
+    <qsc:notes>Develops cryogenic superconducting wire for fusion and quantum systems</qsc:notes>
+    <qsc:country>USA</qsc:country>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#Likely:"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#IBM"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#D_Wave"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#DOE_funded"/>
+    <qsc:hasClient rdf:resource="http://quantum-supply-chain.org/ontology#projects"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Super_Conductor_Materials_Inc_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <qsc:name>Super Conductor Materials Inc.</qsc:name>
+    <qsc:country>USA</qsc:country>
+    <qsc:component_types>Sputtering targets, thin-film superconductors</qsc:component_types>
+    <qsc:materials_supplied>NbTi, Nb₃Sn, superconducting films</qsc:materials_supplied>
+    <qsc:clients>['IBM', 'Google', 'Rigetti']</qsc:clients>
+    <qsc:applications>Quantum chips, thin films</qsc:applications>
+    <qsc:website>https://scmat.com</qsc:website>
+    <qsc:technical_specs>Sputtering targets for qubits</qsc:technical_specs>
+    <qsc:notes>Primary supplier for IBM/Google</qsc:notes>
+    <qsc:last_updated>2025-09-16T17:14:27.763366</qsc:last_updated>
+    <qsc:data_source>Excel update</qsc:data_source>
+    <qsc:lastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-16T17:14:27.776066</qsc:lastUpdated>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#_France_">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Sumitomo_Electric_Industries__Ltd___Japan_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#projects">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Hyper_Tech_Research__Inc___USA_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#MetOx_Technologies__Inc_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#publicTicker">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>publicTicker</rdfs:label>
+    <rdfs:comment>Stock ticker symbol if public</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Ocean_SDK__D_Wave_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#QuantumSDK"/>
+    <qsc:name>Ocean SDK (D-Wave)</qsc:name>
+    <qsc:notes>Tailored for optimization problems using D-Wave’s annealing hardware</qsc:notes>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#D_Wave"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#_Quantum"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#annealing_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#SuperconductingQubit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#QuantumModality"/>
+    <rdfs:label>SuperconductingQubit</rdfs:label>
+    <rdfs:comment>Superconducting-based quantum computing technology</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#QuantumModality"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#cryogenic">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#evico_GmbH__Germany_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#national">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Sam_Dong_Inc___USA_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Western_Superconducting_Technologies_Co___Ltd___China_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#producesComponent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>producesComponent</rdfs:label>
+    <rdfs:comment>Supplier produces specific component type</rdfs:comment>
+    <rdfs:domain rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <rdfs:range rdf:resource="http://quantum-supply-chain.org/ontology#Component"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#QuantumSDK">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>QuantumSDK</rdfs:label>
+    <rdfs:comment>Software development kit for quantum programming</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#NeutralAtom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>NeutralAtom</rdfs:label>
+    <rdfs:comment>Neutral atom quantum computing technology</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#QuantumModality"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Chinese">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Western_Superconducting_Technologies_Co___Ltd___China_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Zapata_Computing">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#SoftwareCompany"/>
+    <qsc:name>Zapata Computing</qsc:name>
+    <qsc:notes>Orquestra platform for hybrid quantum workflows</qsc:notes>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#IBM"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#IonQ"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Rigetti"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Honeywell"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#TKET__Quantinuum_">
+    <rdf:type rdf:resource="http://quantum-supply-chain.org/ontology#QuantumSDK"/>
+    <qsc:name>TKET (Quantinuum)</qsc:name>
+    <qsc:notes>Hardware-agnostic compiler with optimization across multiple platforms</qsc:notes>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#Quantinuum"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#_Trapped"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#ions_"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#also"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#supports"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#IBM"/>
+    <qsc:supportsHardware rdf:resource="http://quantum-supply-chain.org/ontology#IonQ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#MagneticShielding">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>MagneticShielding</rdfs:label>
+    <rdfs:comment>Magnetic shielding components</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#Component"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#D_Wave">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Sam_Dong_Inc___USA_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Hyper_Tech_Research__Inc___USA_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#sdkLanguage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>sdkLanguage</rdfs:label>
+    <rdfs:comment>Programming language for SDK</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#institutions">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#evico_GmbH__Germany_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#applicationArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>applicationArea</rdfs:label>
+    <rdfs:comment>Primary application area</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#ComponentSupplier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>ComponentSupplier</rdfs:label>
+    <rdfs:comment>Company supplying components for quantum systems</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>description</rdfs:label>
+    <rdfs:comment>Detailed description</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#fundingAmount">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>fundingAmount</rdfs:label>
+    <rdfs:comment>Amount of funding received</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Energy">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#SuperPower_Inc___USA_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#SpinQubit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>SpinQubit</rdfs:label>
+    <rdfs:comment>Spin-based quantum computing technology</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://quantum-supply-chain.org/ontology#QuantumModality"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#hasClient">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasClient</rdfs:label>
+    <rdfs:comment>Supplier has client relationship</rdfs:comment>
+    <rdfs:domain rdf:resource="http://quantum-supply-chain.org/ontology#ComponentSupplier"/>
+    <rdfs:range rdf:resource="http://quantum-supply-chain.org/ontology#Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Likely:">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Sam_Dong_Inc___USA_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Accurate_Wire__USA_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Hyper_Tech_Research__Inc___USA_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#JASTEC__Japan_Superconductor_Tech_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Component">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Component</rdfs:label>
+    <rdfs:comment>Physical component used in quantum systems</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#QuantumPlatform">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>QuantumPlatform</rdfs:label>
+    <rdfs:comment>Complete quantum computing platform or system</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>name</rdfs:label>
+    <rdfs:comment>Official company/product name</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Rigetti">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Super_Conductor_Materials__Inc___USA_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#partneredWith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>partneredWith</rdfs:label>
+    <rdfs:comment>Partnership between organizations</rdfs:comment>
+    <rdfs:domain rdf:resource="http://quantum-supply-chain.org/ontology#Organization"/>
+    <rdfs:range rdf:resource="http://quantum-supply-chain.org/ontology#Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#temperatureRange">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>temperatureRange</rdfs:label>
+    <rdfs:comment>Operating temperature range</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#ClientRelationship">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>ClientRelationship</rdfs:label>
+    <rdfs:comment>Client-vendor relationship</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Organization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Organization</rdfs:label>
+    <rdfs:comment>Base class for all organizations in the quantum supply chain</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#R&amp;D">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Hitachi__Ltd_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#criticalTemperature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>criticalTemperature</rdfs:label>
+    <rdfs:comment>Superconducting critical temperature</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#website">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>website</rdfs:label>
+    <rdfs:comment>Official website URL</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#DOE_funded">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#SuperPower_Inc___USA_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Hyper_Tech_Research__Inc___USA_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#MetOx_Technologies__Inc_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#infrastructure">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#NEXANS__France_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#MetOx_Technologies__Inc_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Design">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Accurate_Wire__USA_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#providers">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#NEXANS__France_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Origin">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Western_Superconducting_Technologies_Co___Ltd___China_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Superconductor_Technologies_Inc_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Indirect:">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#NEXANS__France_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Tokamak">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#SuperPower_Inc___USA_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Japanese">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Sumitomo_Electric_Industries__Ltd___Japan_"/>
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#JASTEC__Japan_Superconductor_Tech_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#integrators">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#evico_GmbH__Germany_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#system">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#evico_GmbH__Germany_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Google">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Super_Conductor_Materials__Inc___USA_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#Partner:">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Sumitomo_Electric_Industries__Ltd___Japan_"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://quantum-supply-chain.org/ontology#SpinQ">
+    <qsc:clientOf rdf:resource="http://quantum-supply-chain.org/ontology#Superconductor_Technologies_Inc_"/>
+  </rdf:Description>
+</rdf:RDF>

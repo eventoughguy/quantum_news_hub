@@ -1,0 +1,178 @@
+{
+  "modality": "SuperconductingQubit",
+  "companies": [
+    {
+      "name": "IBM Quantum",
+      "type": "hardware",
+      "country": "USA",
+      "modalities": [
+        "SuperconductingQubit"
+      ],
+      "description": "Leading quantum computing platform",
+      "website": "https://quantum.ibm.com",
+      "founded_year": 1911,
+      "qubit_count": 1000,
+      "cloud_service": true,
+      "platforms": [
+        "IBM Quantum Network"
+      ],
+      "notes": "nan",
+      "last_updated": "2025-09-16T17:14:27.763092",
+      "data_source": "Excel update"
+    },
+    {
+      "name": "Google Quantum AI",
+      "type": "hardware",
+      "country": "USA",
+      "modalities": [
+        "SuperconductingQubit"
+      ],
+      "description": "Quantum AI research and platforms",
+      "website": "https://quantumai.google",
+      "founded_year": 1998,
+      "qubit_count": 70,
+      "cloud_service": true,
+      "platforms": [
+        "Google Quantum AI"
+      ],
+      "notes": "nan",
+      "last_updated": "2025-09-16T17:14:27.763180",
+      "data_source": "Excel update"
+    },
+    {
+      "name": "Rigetti Computing",
+      "type": "hardware",
+      "country": "USA",
+      "modalities": [
+        "SuperconductingQubit"
+      ],
+      "description": "Full-stack quantum computing",
+      "website": "https://rigetti.com",
+      "founded_year": 2013,
+      "qubit_count": 80,
+      "cloud_service": true,
+      "platforms": [
+        "Quantum Cloud Services"
+      ],
+      "notes": "nan",
+      "last_updated": "2025-09-16T17:14:27.763240",
+      "data_source": "Excel update"
+    },
+    {
+      "name": "Super Conductor Materials Inc.",
+      "type": "supplier",
+      "country": "USA",
+      "component_types": "Sputtering targets, thin-film superconductors",
+      "materials_supplied": "NbTi, Nb\u2083Sn, superconducting films",
+      "clients": [
+        "IBM",
+        "Google",
+        "Rigetti"
+      ],
+      "applications": "Quantum chips, thin films",
+      "website": "https://scmat.com",
+      "technical_specs": "Sputtering targets for qubits",
+      "notes": "Primary supplier for IBM/Google",
+      "last_updated": "2025-09-16T17:14:27.763366",
+      "data_source": "Excel update"
+    },
+    {
+      "name": "Sumitomo Electric Industries",
+      "type": "supplier",
+      "country": "Japan",
+      "component_types": "HTS wire",
+      "materials_supplied": "HTS wire, Nb\u2083Sn",
+      "clients": [
+        "Pasqal",
+        "Japanese labs"
+      ],
+      "applications": "Quantum logistics, magnets",
+      "website": "https://global-sei.com",
+      "technical_specs": "HTS wire optimization",
+      "notes": "Partnership with Pasqal",
+      "last_updated": "2025-09-16T17:14:27.763411",
+      "data_source": "Excel update"
+    },
+    {
+      "name": "SuperPower Inc.",
+      "type": "supplier",
+      "country": "USA",
+      "component_types": "HTS tape, high-field magnets",
+      "materials_supplied": "YBCO tape, superconducting wire",
+      "clients": [
+        "Tokamak Energy",
+        "DOE labs"
+      ],
+      "applications": "High-field systems, cryogenics",
+      "website": "https://superpower-inc.com",
+      "technical_specs": "High current capacity",
+      "notes": "$80M DOE support",
+      "last_updated": "2025-09-16T17:14:27.763446",
+      "data_source": "Excel update"
+    },
+    {
+      "name": "Qiskit",
+      "type": "software",
+      "company": "IBM",
+      "product_type": "SDK",
+      "programming_languages": [
+        "Python"
+      ],
+      "supported_hardware": [
+        "IBM Quantum"
+      ],
+      "license": "Open Source",
+      "website": "https://qiskit.org",
+      "github": "https://github.com/Qiskit",
+      "description": "Open-source quantum computing SDK",
+      "notes": "Most popular quantum SDK",
+      "last_updated": "2025-09-16T17:14:27.763517",
+      "data_source": "Excel update"
+    },
+    {
+      "name": "Cirq",
+      "type": "software",
+      "company": "Google",
+      "product_type": "SDK",
+      "programming_languages": [
+        "Python"
+      ],
+      "supported_hardware": [
+        "Google quantum processors"
+      ],
+      "license": "Open Source",
+      "website": "https://quantumai.google/cirq",
+      "github": "https://github.com/quantumlib/Cirq",
+      "description": "Python framework for quantum circuits",
+      "notes": "Focus on Google hardware",
+      "last_updated": "2025-09-16T17:14:27.763553",
+      "data_source": "Excel update"
+    },
+    {
+      "name": "Forest SDK",
+      "type": "software",
+      "company": "Rigetti",
+      "product_type": "SDK",
+      "programming_languages": [
+        "Python"
+      ],
+      "supported_hardware": [
+        "Rigetti systems"
+      ],
+      "license": "Open Source",
+      "website": "https://rigetti.com/forest",
+      "github": "https://github.com/rigetti",
+      "description": "Quantum-classical hybrid computing",
+      "notes": "Hybrid workflows",
+      "last_updated": "2025-09-16T17:14:27.763586",
+      "data_source": "Excel update"
+    }
+  ],
+  "stats": {
+    "hardware": 3,
+    "suppliers": 3,
+    "software": 3,
+    "total": 9
+  },
+  "sync_time": "2025-09-16T17:14:27.829982"
+}

@@ -1,0 +1,93 @@
+
+@prefix qc: <http://example.org/quantum#> .
+@prefix tech: <http://example.org/technology#> .
+@prefix app: <http://example.org/application#> .
+@prefix org: <http://example.org/org#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Modalities
+qc:TrappedIon a qc:Modality ;
+    qc:usedBy org:IonQ, org:OxfordIonics ;
+    qc:enables tech:IonTrapChip, tech:AQ64Milestone .
+
+qc:NeutralAtom a qc:Modality ;
+    qc:usedBy org:Harvard, org:Caltech, org:USTC ;
+    qc:enables tech:AtomArray6100, tech:DefectFreePlacement .
+
+qc:Superconducting a qc:Modality ;
+    qc:usedBy org:IBM, org:Google ;
+    qc:enables tech:HeronChip, tech:WillowChip .
+
+qc:Photonic a qc:Modality ;
+    qc:usedBy org:PsiQuantum, org:BosonQuantum ;
+    qc:enables tech:BoltzmannSampling, tech:CoherentPhotonics .
+
+qc:CatQubit a qc:Modality ;
+    qc:usedBy org:AliceBob ;
+    qc:enables tech:LongLivedCatQubit .
+
+### Technologies
+tech:IonTrapChip a qc:Technology ;
+    qc:hasMilestone "IonQ Tempo AQ64" ;
+    qc:enables app:QuantumSimulation, app:SecureComms .
+
+tech:AtomArray6100 a qc:Technology ;
+    qc:hasMilestone "Caltech 6100 Qubit Array" ;
+    qc:enables app:MaterialsDiscovery, app:QuantumAI .
+
+tech:HeronChip a qc:Technology ;
+    qc:hasMilestone "IBM Heron Chip" ;
+    qc:enables app:FinancialOptimization .
+
+tech:WillowChip a qc:Technology ;
+    qc:hasMilestone "Google Willow Chip" ;
+    qc:enables tech:QuantumErrorCorrection .
+
+tech:BoltzmannSampling a qc:Technology ;
+    qc:hasMilestone "Boson Quantum Drug Screening" ;
+    qc:enables app:DrugDiscovery .
+
+tech:QuantumErrorCorrection a qc:Technology ;
+    qc:hasMilestone "Logical Qubit Encoding" ;
+    qc:enables app:FaultTolerantComputing .
+
+### Applications
+app:DrugDiscovery a qc:Application ;
+    qc:enabledBy tech:BoltzmannSampling, tech:AtomArray6100 .
+
+app:FinancialOptimization a qc:Application ;
+    qc:enabledBy tech:HeronChip ;
+    qc:usedBy org:HSBC .
+
+app:QuantumAI a qc:Application ;
+    qc:enabledBy tech:AtomArray6100, tech:CoherentPhotonics .
+
+app:SecureComms a qc:Application ;
+    qc:enabledBy tech:IonTrapChip, tech:QuantumNetworking .
+
+app:FaultTolerantComputing a qc:Application ;
+    qc:enabledBy tech:QuantumErrorCorrection, tech:LongLivedCatQubit .
+
+app:MaterialsDiscovery a qc:Application ;
+    qc:enabledBy tech:AtomArray6100, tech:FermiHubbardSimulation .
+
+### Organizations
+org:IonQ a qc:Organization ;
+    qc:uses qc:TrappedIon ;
+    qc:develops tech:IonTrapChip .
+
+org:IBM a qc:Organization ;
+    qc:uses qc:Superconducting ;
+    qc:develops tech:HeronChip .
+
+org:Google a qc:Organization ;
+    qc:uses qc:Superconducting ;
+    qc:develops tech:WillowChip .
+
+org:BosonQuantum a qc:Organization ;
+    qc:uses qc:Photonic ;
+    qc:develops tech:BoltzmannSampling .
+
+org:HSBC a qc:Organization ;
+    qc:uses app:FinancialOptimization ;
+    qc:partneredWith org:IBM .

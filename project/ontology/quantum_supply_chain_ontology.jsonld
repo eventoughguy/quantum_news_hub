@@ -1,0 +1,3315 @@
+[
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#supportsHardware",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "SDK supports specific hardware platform"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#QuantumSDK"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "supportsHardware"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#QuantumPlatform"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Super_Conductor_Materials_Inc_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+    ],
+    "http://quantum-supply-chain.org/ontology#applications": [
+      {
+        "@value": "Quantum chips, thin films"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#clients": [
+      {
+        "@value": "['IBM', 'Google', 'Rigetti']"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#component_types": [
+      {
+        "@value": "Sputtering targets, thin-film superconductors"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#country": [
+      {
+        "@value": "USA"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#data_source": [
+      {
+        "@value": "Excel update"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#lastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-09-16T17:14:27.776066"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#last_updated": [
+      {
+        "@value": "2025-09-16T17:14:27.763366"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#materials_supplied": [
+      {
+        "@value": "NbTi, Nb₃Sn, superconducting films"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Super Conductor Materials Inc."
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Primary supplier for IBM/Google"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#technical_specs": [
+      {
+        "@value": "Sputtering targets for qubits"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#website": [
+      {
+        "@value": "https://scmat.com"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#materialType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Type of material (e.g., NbTi, Nb₃Sn, MgB₂)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "materialType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#ClientRelationship",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Client-vendor relationship"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ClientRelationship"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Japanese",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Sumitomo_Electric_Industries__Ltd___Japan_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#JASTEC__Japan_Superconductor_Tech_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Rigetti",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Super_Conductor_Materials__Inc___USA_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#developsSDK",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Software company develops SDK"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#SoftwareCompany"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "developsSDK"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#QuantumSDK"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Qiskit",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#SoftwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#company": [
+      {
+        "@value": "IBM"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#data_source": [
+      {
+        "@value": "Excel update"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#description": [
+      {
+        "@value": "Open-source quantum computing SDK"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#github": [
+      {
+        "@value": "https://github.com/Qiskit"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#lastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-09-16T17:14:27.776528"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#last_updated": [
+      {
+        "@value": "2025-09-16T17:14:27.763517"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#license": [
+      {
+        "@value": "Open Source"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Qiskit"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Most popular quantum SDK"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#product_type": [
+      {
+        "@value": "SDK"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#programming_languages": [
+      {
+        "@value": "['Python']"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#supported_hardware": [
+      {
+        "@value": "['IBM Quantum']"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#website": [
+      {
+        "@value": "https://qiskit.org"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#SpinQubit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Spin-based quantum computing technology"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SpinQubit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#QuantumModality"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#QCI",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#lastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-09-16T17:14:27.773008"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "QCI"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#usesModality": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#SuperconductingQubit"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Sumitomo_Electric_Industries__Ltd___Japan_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+    ],
+    "http://quantum-supply-chain.org/ontology#country": [
+      {
+        "@value": "Japan"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#hasClient": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Partner:"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Pasqal"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#_France_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Japanese"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#quantum"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#labs"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Sumitomo Electric Industries, Ltd. (Japan)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Supplies HTS wire and supports quantum logistics optimization"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#publicTicker",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Stock ticker symbol if public"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "publicTicker"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#SuperPower_Inc_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+    ],
+    "http://quantum-supply-chain.org/ontology#applications": [
+      {
+        "@value": "High-field systems, cryogenics"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#clients": [
+      {
+        "@value": "['Tokamak Energy', 'DOE labs']"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#component_types": [
+      {
+        "@value": "HTS tape, high-field magnets"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#country": [
+      {
+        "@value": "USA"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#data_source": [
+      {
+        "@value": "Excel update"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#lastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-09-16T17:14:27.776378"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#last_updated": [
+      {
+        "@value": "2025-09-16T17:14:27.763446"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#materials_supplied": [
+      {
+        "@value": "YBCO tape, superconducting wire"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "SuperPower Inc."
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "$80M DOE support"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#technical_specs": [
+      {
+        "@value": "High current capacity"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#website": [
+      {
+        "@value": "https://superpower-inc.com"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Energy",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#SuperPower_Inc___USA_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#wireType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Type of superconducting wire"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "wireType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Research",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#evico_GmbH__Germany_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Forest_SDK",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#SoftwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#company": [
+      {
+        "@value": "Rigetti"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#data_source": [
+      {
+        "@value": "Excel update"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#description": [
+      {
+        "@value": "Quantum-classical hybrid computing"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#github": [
+      {
+        "@value": "https://github.com/rigetti"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#lastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-09-16T17:14:27.777041"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#last_updated": [
+      {
+        "@value": "2025-09-16T17:14:27.763586"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#license": [
+      {
+        "@value": "Open Source"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Forest SDK"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Hybrid workflows"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#product_type": [
+      {
+        "@value": "SDK"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#programming_languages": [
+      {
+        "@value": "['Python']"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#supported_hardware": [
+      {
+        "@value": "['Rigetti systems']"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#website": [
+      {
+        "@value": "https://rigetti.com/forest"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#ComponentSupplier",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Company supplying components for quantum systems"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ComponentSupplier"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Organization"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Design",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Accurate_Wire__USA_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#PhotonicQuantum",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Photonic quantum computing technology"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "PhotonicQuantum"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#QuantumModality"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#website",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Official website URL"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "website"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#quantum",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Sumitomo_Electric_Industries__Ltd___Japan_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#SuperPower_Inc___USA_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Hitachi__Ltd_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#MetOx_Technologies__Inc_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#integrators",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#evico_GmbH__Germany_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#QuantumHardwareCompany",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Company developing quantum computing hardware"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "QuantumHardwareCompany"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Organization"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Classiq",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#SoftwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Classiq"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "High-level quantum algorithm synthesis platform"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#supportsHardware": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IBM"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IonQ"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Quantinuum"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Rigetti"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Ocean_SDK__D_Wave_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#QuantumSDK"
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Ocean SDK (D-Wave)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Tailored for optimization problems using D-Wave’s annealing hardware"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#supportsHardware": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#D_Wave"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#_Quantum"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#annealing_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Hitachi__Ltd_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+    ],
+    "http://quantum-supply-chain.org/ontology#hasClient": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Internal"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#quantum"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#R&D"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Hitachi, Ltd."
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Hitachi develops its own quantum computing platforms"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Northrop_Grumman",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#lastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-09-16T17:14:27.773294"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Northrop Grumman"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#usesModality": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#SuperconductingQubit"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#IBM_Quantum",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#cloud_service": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#country": [
+      {
+        "@value": "USA"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#data_source": [
+      {
+        "@value": "Excel update"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#description": [
+      {
+        "@value": "Leading quantum computing platform"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#founded_year": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1911
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#lastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-09-16T17:14:27.775546"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#last_updated": [
+      {
+        "@value": "2025-09-16T17:14:27.763092"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#modalities": [
+      {
+        "@value": "['SuperconductingQubit']"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "IBM Quantum"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "nan"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#platforms": [
+      {
+        "@value": "['IBM Quantum Network']"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#qubit_count": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1000
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#usesModality": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#SuperconductingQubit"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#website": [
+      {
+        "@value": "https://quantum.ibm.com"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#CryogenicComponent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Components for cryogenic cooling systems"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "CryogenicComponent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Component"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#criticalTemperature",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Superconducting critical temperature"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "criticalTemperature"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#requiresComponent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Platform requires specific component"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#QuantumPlatform"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "requiresComponent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Component"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#clientOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Organization is client of supplier"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Organization"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "clientOf"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#applicationArea",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Primary application area"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "applicationArea"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#SuperconductingQubit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://quantum-supply-chain.org/ontology#QuantumModality"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Superconducting-based quantum computing technology"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SuperconductingQubit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#QuantumModality"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Accurate_Wire__USA_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+    ],
+    "http://quantum-supply-chain.org/ontology#country": [
+      {
+        "@value": "USA"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#hasClient": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Likely:"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IBM"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Quantum"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Design"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#research"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#labs"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Accurate Wire (USA)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Produces NbTi and Nb₃Sn wire used in superconducting circuits"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Rigetti_Computing",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#cloud_service": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#country": [
+      {
+        "@value": "USA"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#data_source": [
+      {
+        "@value": "Excel update"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#description": [
+      {
+        "@value": "Full-stack quantum computing"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#founded_year": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2013
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#lastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-09-16T17:14:27.772526"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-09-16T17:14:27.775927"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#last_updated": [
+      {
+        "@value": "2025-09-16T17:14:27.763240"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#modalities": [
+      {
+        "@value": "['SuperconductingQubit']"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Rigetti Computing"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "nan"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#platforms": [
+      {
+        "@value": "['Quantum Cloud Services']"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#qubit_count": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 80
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#usesModality": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#SuperconductingQubit"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#website": [
+      {
+        "@value": "https://rigetti.com"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#QuantumChip",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Quantum processing unit or chip"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "QuantumChip"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Component"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Seeqc",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Super_Conductor_Materials__Inc___USA_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Superconductor_Technologies_Inc_"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#lastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-09-16T17:14:27.772756"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Seeqc"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#usesModality": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#SuperconductingQubit"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#lastUpdated",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Last time information was updated"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "lastUpdated"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#IBM",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Super_Conductor_Materials__Inc___USA_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Sam_Dong_Inc___USA_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Accurate_Wire__USA_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Hyper_Tech_Research__Inc___USA_"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#lastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-09-16T17:14:27.772083"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "IBM"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#usesModality": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#SuperconductingQubit"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#SuperPower_Inc___USA_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+    ],
+    "http://quantum-supply-chain.org/ontology#country": [
+      {
+        "@value": "USA"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#hasClient": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Tokamak"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Energy"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#DOE_funded"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#quantum"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#labs"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "SuperPower Inc. (USA)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "HTS tape supplier for high-field magnets and cryogenic systems"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Wire",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specialized wire for quantum applications"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Wire"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Component"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#suppliesComponentTo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Component supplier provides components to hardware company"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "suppliesComponentTo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#system",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#evico_GmbH__Germany_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#SpinQ",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Superconductor_Technologies_Inc_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#D_Wave",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Sam_Dong_Inc___USA_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Hyper_Tech_Research__Inc___USA_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#temperatureRange",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Operating temperature range"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "temperatureRange"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#marketFocus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Primary market focus"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "marketFocus"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#name",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Official company/product name"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "name"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Hitachi",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#JASTEC__Japan_Superconductor_Tech_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#QunaSys",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#SoftwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "QunaSys"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Focused on quantum chemistry and enterprise solutions"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#supportsHardware": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IBM"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Rigetti"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IonQ"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Cirq",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#SoftwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#company": [
+      {
+        "@value": "Google"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#data_source": [
+      {
+        "@value": "Excel update"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#description": [
+      {
+        "@value": "Python framework for quantum circuits"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#github": [
+      {
+        "@value": "https://github.com/quantumlib/Cirq"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#lastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-09-16T17:14:27.776787"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#last_updated": [
+      {
+        "@value": "2025-09-16T17:14:27.763553"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#license": [
+      {
+        "@value": "Open Source"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Cirq"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Focus on Google hardware"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#product_type": [
+      {
+        "@value": "SDK"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#programming_languages": [
+      {
+        "@value": "['Python']"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#supported_hardware": [
+      {
+        "@value": "['Google quantum processors']"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#website": [
+      {
+        "@value": "https://quantumai.google/cirq"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#evico_GmbH__Germany_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+    ],
+    "http://quantum-supply-chain.org/ontology#country": [
+      {
+        "@value": "Germany"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#hasClient": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Research"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#institutions"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#cryogenic"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#system"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#integrators"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "evico GmbH (Germany)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Specializes in magnetic shielding and cryogenic bearings"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#SoftwareCompany",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Company developing quantum software/SDKs"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SoftwareCompany"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Organization"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#cryogenic",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#evico_GmbH__Germany_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#SupplyRelationship",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Supply relationship between companies"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SupplyRelationship"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Region",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Geographic region"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Region"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#producesComponent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Supplier produces specific component type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "producesComponent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Component"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#currentCapacity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Current carrying capacity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "currentCapacity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Detailed description"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "description"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#DOE_funded",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#SuperPower_Inc___USA_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Hyper_Tech_Research__Inc___USA_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#MetOx_Technologies__Inc_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Likely:",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Sam_Dong_Inc___USA_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Accurate_Wire__USA_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Hyper_Tech_Research__Inc___USA_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#JASTEC__Japan_Superconductor_Tech_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Internal",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Hitachi__Ltd_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#institutions",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#evico_GmbH__Germany_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#JASTEC__Japan_Superconductor_Tech_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+    ],
+    "http://quantum-supply-chain.org/ontology#country": [
+      {
+        "@value": "Japan"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#hasClient": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Likely:"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Hitachi"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Japanese"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#labs"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "JASTEC (Japan Superconductor Tech)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Manufactures superconducting wire for magnets and cryogenic systems"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Hyper_Tech_Research__Inc___USA_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+    ],
+    "http://quantum-supply-chain.org/ontology#country": [
+      {
+        "@value": "USA"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#hasClient": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Likely:"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IBM"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#D_Wave"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#DOE_funded"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#projects"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Hyper Tech Research, Inc. (USA)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Develops cryogenic superconducting wire for fusion and quantum systems"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Chinese",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Western_Superconducting_Technologies_Co___Ltd___China_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#QuantumPlatform",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Complete quantum computing platform or system"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "QuantumPlatform"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#PennyLane__Xanadu_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#QuantumSDK"
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "PennyLane (Xanadu)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Focuses on quantum machine learning and hybrid workflows"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#supportsHardware": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Xanadu"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#_Photonic_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#also"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#supports"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IBM"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IonQ"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Rigetti"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Pasqal",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Sumitomo_Electric_Industries__Ltd___Japan_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#notes",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Additional notes or details"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "notes"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Sumitomo_Electric_Industries",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+    ],
+    "http://quantum-supply-chain.org/ontology#applications": [
+      {
+        "@value": "Quantum logistics, magnets"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#clients": [
+      {
+        "@value": "['Pasqal', 'Japanese labs']"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#component_types": [
+      {
+        "@value": "HTS wire"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#country": [
+      {
+        "@value": "Japan"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#data_source": [
+      {
+        "@value": "Excel update"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#lastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-09-16T17:14:27.776227"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#last_updated": [
+      {
+        "@value": "2025-09-16T17:14:27.763411"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#materials_supplied": [
+      {
+        "@value": "HTS wire, Nb₃Sn"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Sumitomo Electric Industries"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Partnership with Pasqal"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#technical_specs": [
+      {
+        "@value": "HTS wire optimization"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#website": [
+      {
+        "@value": "https://global-sei.com"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#providers",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#NEXANS__France_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#license",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Software license type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "license"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#usesModality",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Hardware company uses specific quantum modality"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "usesModality"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#QuantumModality"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#operationalStatus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Current operational status"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "operationalStatus"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#projects",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Hyper_Tech_Research__Inc___USA_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#MetOx_Technologies__Inc_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#TKET__Quantinuum_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#QuantumSDK"
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "TKET (Quantinuum)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Hardware-agnostic compiler with optimization across multiple platforms"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#supportsHardware": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Quantinuum"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#_Trapped"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#ions_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#also"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#supports"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IBM"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IonQ"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Western_Superconducting_Technologies_Co___Ltd___China_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+    ],
+    "http://quantum-supply-chain.org/ontology#country": [
+      {
+        "@value": "China"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#hasClient": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Origin"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Quantum"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Chinese"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#national"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#labs"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Western Superconducting Technologies Co., Ltd. (China)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Major supplier of NbTi/Nb₃Sn wire for superconducting quantum chips"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Q#__Microsoft_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#SoftwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Q# (Microsoft)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Language for quantum development; integrates with multiple backends"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#supportsHardware": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Azure"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Quantum"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#_Simulators"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IonQ"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Quantinuum"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Pasqal_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#NEXANS__France_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+    ],
+    "http://quantum-supply-chain.org/ontology#country": [
+      {
+        "@value": "France"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#hasClient": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Indirect:"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Quantum"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#labs"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#infrastructure"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#providers"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "NEXANS (France)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Provides superconducting cables for energy and data centers"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#R&D",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Hitachi__Ltd_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Super_Conductor_Materials__Inc___USA_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+    ],
+    "http://quantum-supply-chain.org/ontology#country": [
+      {
+        "@value": "USA"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#hasClient": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IBM"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Google"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Rigetti"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Seeqc"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Super Conductor Materials, Inc. (USA)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Supplies sputtering targets for thin-film superconducting qubits"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#labs",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Sam_Dong_Inc___USA_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Accurate_Wire__USA_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Sumitomo_Electric_Industries__Ltd___Japan_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#SuperPower_Inc___USA_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#NEXANS__France_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Western_Superconducting_Technologies_Co___Ltd___China_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#JASTEC__Japan_Superconductor_Tech_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#fundingAmount",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Amount of funding received"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "fundingAmount"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#country",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Country of origin/operation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "country"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Partnership",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Business partnership between organizations"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Partnership"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Google_Quantum_AI",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#cloud_service": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#country": [
+      {
+        "@value": "USA"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#data_source": [
+      {
+        "@value": "Excel update"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#description": [
+      {
+        "@value": "Quantum AI research and platforms"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#founded_year": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1998
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#lastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-09-16T17:14:27.772317"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-09-16T17:14:27.775746"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#last_updated": [
+      {
+        "@value": "2025-09-16T17:14:27.763180"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#modalities": [
+      {
+        "@value": "['SuperconductingQubit']"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Google Quantum AI"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "nan"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#platforms": [
+      {
+        "@value": "['Google Quantum AI']"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#qubit_count": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 70
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#usesModality": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#SuperconductingQubit"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#website": [
+      {
+        "@value": "https://quantumai.google"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Google",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Super_Conductor_Materials__Inc___USA_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Strangeworks",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#SoftwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Strangeworks"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Quantum-as-a-service platform with multi-hardware support"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#supportsHardware": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Aggregates"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#access"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IBM"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IonQ"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Rigetti"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#D_Wave"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#MetOx_Technologies__Inc_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+    ],
+    "http://quantum-supply-chain.org/ontology#hasClient": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#DOE_funded"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#quantum"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#infrastructure"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#projects"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "MetOx Technologies, Inc."
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "HTS wire supplier with $80M DOE support for quantum-related use"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Country",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Country where organization is located"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Country"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Region"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Qu&Co__merged_with_Pasqal_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#SoftwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Qu&Co (merged with Pasqal)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Develops quantum simulation tools for chemistry and physics"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#supportsHardware": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Pasqal"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#_Neutral"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#atoms_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Quantum",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Accurate_Wire__USA_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#NEXANS__France_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Western_Superconducting_Technologies_Co___Ltd___China_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Superconductor_Technologies_Inc_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#hasClient",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Supplier has client relationship"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasClient"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Organization"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#productType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Type of product or service"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "productType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Tokamak",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#SuperPower_Inc___USA_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Component",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Physical component used in quantum systems"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Component"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Aliro_Quantum",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#SoftwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Aliro Quantum"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Emphasizes quantum networking and hybrid execution"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#supportsHardware": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Supports"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IBM"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IonQ"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Rigetti"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Honeywell"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Superconductor_Technologies_Inc_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+    ],
+    "http://quantum-supply-chain.org/ontology#hasClient": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Seeqc"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Origin"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Quantum"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#SpinQ"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Superconductor Technologies Inc."
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Develops HTS materials for quantum chip fabrication"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Cable",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Cables for quantum systems"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cable"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Component"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#national",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Sam_Dong_Inc___USA_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Western_Superconducting_Technologies_Co___Ltd___China_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#TrappedIon",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Trapped ion quantum computing technology"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "TrappedIon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#QuantumModality"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#MagneticShielding",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Magnetic shielding components"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "MagneticShielding"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Component"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#region",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Geographic region"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "region"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Qiskit__IBM_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#QuantumSDK"
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Qiskit (IBM)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Open-source SDK for IBM’s superconducting quantum processors"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#supportsHardware": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IBM"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Quantum"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#_Superconducting"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#qubits_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Cirq__Google_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#QuantumSDK"
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Cirq (Google)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Python framework for Google’s Sycamore and Bristlecone chips"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#supportsHardware": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Google"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Quantum"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#_Superconducting"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#qubits_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#QuantumSDK",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Software development kit for quantum programming"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "QuantumSDK"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#foundedYear",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Year company was founded"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "foundedYear"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#gYear"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#sdkLanguage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Programming language for SDK"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "sdkLanguage"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#IQM",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#QuantumHardwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#lastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2025-09-16T17:14:27.773514"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "IQM"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#usesModality": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#SuperconductingQubit"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Forest_SDK__Rigetti_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#QuantumSDK"
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Forest SDK (Rigetti)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Includes Quil language and tools for hybrid quantum-classical tasks"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#supportsHardware": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Rigetti"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#_Superconducting"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#qubits_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Tape",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "High-temperature superconducting tape"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Tape"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Component"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Indirect:",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#NEXANS__France_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#QuantumAnnealing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Quantum annealing technology"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "QuantumAnnealing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#QuantumModality"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#infrastructure",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#NEXANS__France_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#MetOx_Technologies__Inc_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#research",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Accurate_Wire__USA_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#MaterialsCompany",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Company supplying raw materials for quantum hardware"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "MaterialsCompany"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Organization"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#_France_",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Sumitomo_Electric_Industries__Ltd___Japan_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Organization",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Base class for all organizations in the quantum supply chain"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Organization"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#SuperconductingMaterial",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Materials used in superconducting quantum systems"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SuperconductingMaterial"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Component"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#NeutralAtom",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Neutral atom quantum computing technology"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "NeutralAtom"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#QuantumModality"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Origin",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Western_Superconducting_Technologies_Co___Ltd___China_"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Superconductor_Technologies_Inc_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#QuantumModality",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Different approaches to quantum computing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "QuantumModality"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Ontology for quantum computing supply chain based on real industry data, covering hardware companies, component suppliers, software providers, and their relationships."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Quantum Computing Supply Chain Ontology"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://quantum-supply-chain.org/data-schema"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "1.0"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Zapata_Computing",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#SoftwareCompany"
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Zapata Computing"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Orquestra platform for hybrid quantum workflows"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#supportsHardware": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IBM"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IonQ"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Rigetti"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Honeywell"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#employeeCount",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Number of employees"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "employeeCount"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#partneredWith",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Partnership between organizations"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Organization"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "partneredWith"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Organization"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Partner:",
+    "http://quantum-supply-chain.org/ontology#clientOf": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Sumitomo_Electric_Industries__Ltd___Japan_"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#companyStage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Company stage (startup, established, etc.)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "companyStage"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#Sam_Dong_Inc___USA_",
+    "@type": [
+      "http://quantum-supply-chain.org/ontology#ComponentSupplier"
+    ],
+    "http://quantum-supply-chain.org/ontology#country": [
+      {
+        "@value": "USA"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#hasClient": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Likely:"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#D_Wave"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#IBM"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#national"
+      },
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#labs"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#name": [
+      {
+        "@value": "Sam Dong Inc. (USA)"
+      }
+    ],
+    "http://quantum-supply-chain.org/ontology#notes": [
+      {
+        "@value": "Manufactures MgB₂ wire used in cryogenic systems and superconducting magnets"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#locatedIn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Organization is located in country"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Organization"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "locatedIn"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://quantum-supply-chain.org/ontology#Country"
+      }
+    ]
+  },
+  {
+    "@id": "http://quantum-supply-chain.org/ontology#dataSource",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Source of the information"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "dataSource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  }
+]

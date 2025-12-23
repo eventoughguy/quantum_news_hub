@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: quantum-news-hub
+    env: python
+    buildCommand: "cd project && pip install -r requirements.txt"
+    startCommand: "cd project/news_agent && gunicorn --bind 0.0.0.0:$PORT enhanced_app:app"
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false  # This will need to be set manually in Render dashboard

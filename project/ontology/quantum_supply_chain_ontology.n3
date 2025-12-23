@@ -1,0 +1,807 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qsc: <http://quantum-supply-chain.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://quantum-supply-chain.org/ontology> a owl:Ontology ;
+    rdfs:label "Quantum Computing Supply Chain Ontology" ;
+    rdfs:comment "Ontology for quantum computing supply chain based on real industry data, covering hardware companies, component suppliers, software providers, and their relationships." ;
+    rdfs:seeAlso <http://quantum-supply-chain.org/data-schema> ;
+    owl:versionInfo "1.0" .
+
+qsc:Aliro_Quantum a qsc:SoftwareCompany ;
+    qsc:name "Aliro Quantum" ;
+    qsc:notes "Emphasizes quantum networking and hybrid execution" ;
+    qsc:supportsHardware qsc:Honeywell,
+        qsc:IBM,
+        qsc:IonQ,
+        qsc:Rigetti,
+        qsc:Supports .
+
+qsc:Cable a owl:Class ;
+    rdfs:label "Cable" ;
+    rdfs:comment "Cables for quantum systems" ;
+    rdfs:subClassOf qsc:Component .
+
+qsc:Cirq a qsc:SoftwareCompany ;
+    qsc:company "Google" ;
+    qsc:data_source "Excel update" ;
+    qsc:description "Python framework for quantum circuits" ;
+    qsc:github "https://github.com/quantumlib/Cirq" ;
+    qsc:lastUpdated "2025-09-16T17:14:27.776787"^^xsd:dateTime ;
+    qsc:last_updated "2025-09-16T17:14:27.763553" ;
+    qsc:license "Open Source" ;
+    qsc:name "Cirq" ;
+    qsc:notes "Focus on Google hardware" ;
+    qsc:product_type "SDK" ;
+    qsc:programming_languages "['Python']" ;
+    qsc:supported_hardware "['Google quantum processors']" ;
+    qsc:website "https://quantumai.google/cirq" .
+
+qsc:Cirq__Google_ a qsc:QuantumSDK ;
+    qsc:name "Cirq (Google)" ;
+    qsc:notes "Python framework for Google’s Sycamore and Bristlecone chips" ;
+    qsc:supportsHardware qsc:Google,
+        qsc:Quantum,
+        qsc:_Superconducting,
+        qsc:qubits_ .
+
+qsc:Classiq a qsc:SoftwareCompany ;
+    qsc:name "Classiq" ;
+    qsc:notes "High-level quantum algorithm synthesis platform" ;
+    qsc:supportsHardware qsc:IBM,
+        qsc:IonQ,
+        qsc:Quantinuum,
+        qsc:Rigetti .
+
+qsc:ClientRelationship a owl:Class ;
+    rdfs:label "ClientRelationship" ;
+    rdfs:comment "Client-vendor relationship" .
+
+qsc:CryogenicComponent a owl:Class ;
+    rdfs:label "CryogenicComponent" ;
+    rdfs:comment "Components for cryogenic cooling systems" ;
+    rdfs:subClassOf qsc:Component .
+
+qsc:Forest_SDK a qsc:SoftwareCompany ;
+    qsc:company "Rigetti" ;
+    qsc:data_source "Excel update" ;
+    qsc:description "Quantum-classical hybrid computing" ;
+    qsc:github "https://github.com/rigetti" ;
+    qsc:lastUpdated "2025-09-16T17:14:27.777041"^^xsd:dateTime ;
+    qsc:last_updated "2025-09-16T17:14:27.763586" ;
+    qsc:license "Open Source" ;
+    qsc:name "Forest SDK" ;
+    qsc:notes "Hybrid workflows" ;
+    qsc:product_type "SDK" ;
+    qsc:programming_languages "['Python']" ;
+    qsc:supported_hardware "['Rigetti systems']" ;
+    qsc:website "https://rigetti.com/forest" .
+
+qsc:Forest_SDK__Rigetti_ a qsc:QuantumSDK ;
+    qsc:name "Forest SDK (Rigetti)" ;
+    qsc:notes "Includes Quil language and tools for hybrid quantum-classical tasks" ;
+    qsc:supportsHardware qsc:Rigetti,
+        qsc:_Superconducting,
+        qsc:qubits_ .
+
+qsc:Google_Quantum_AI a qsc:QuantumHardwareCompany ;
+    qsc:cloud_service true ;
+    qsc:country "USA" ;
+    qsc:data_source "Excel update" ;
+    qsc:description "Quantum AI research and platforms" ;
+    qsc:founded_year 1998 ;
+    qsc:lastUpdated "2025-09-16T17:14:27.772317"^^xsd:dateTime,
+        "2025-09-16T17:14:27.775746"^^xsd:dateTime ;
+    qsc:last_updated "2025-09-16T17:14:27.763180" ;
+    qsc:modalities "['SuperconductingQubit']" ;
+    qsc:name "Google Quantum AI" ;
+    qsc:notes "nan" ;
+    qsc:platforms "['Google Quantum AI']" ;
+    qsc:qubit_count 70 ;
+    qsc:usesModality qsc:SuperconductingQubit ;
+    qsc:website "https://quantumai.google" .
+
+qsc:IBM_Quantum a qsc:QuantumHardwareCompany ;
+    qsc:cloud_service true ;
+    qsc:country "USA" ;
+    qsc:data_source "Excel update" ;
+    qsc:description "Leading quantum computing platform" ;
+    qsc:founded_year 1911 ;
+    qsc:lastUpdated "2025-09-16T17:14:27.775546"^^xsd:dateTime ;
+    qsc:last_updated "2025-09-16T17:14:27.763092" ;
+    qsc:modalities "['SuperconductingQubit']" ;
+    qsc:name "IBM Quantum" ;
+    qsc:notes "nan" ;
+    qsc:platforms "['IBM Quantum Network']" ;
+    qsc:qubit_count 1000 ;
+    qsc:usesModality qsc:SuperconductingQubit ;
+    qsc:website "https://quantum.ibm.com" .
+
+qsc:IQM a qsc:QuantumHardwareCompany ;
+    qsc:lastUpdated "2025-09-16T17:14:27.773514"^^xsd:dateTime ;
+    qsc:name "IQM" ;
+    qsc:usesModality qsc:SuperconductingQubit .
+
+qsc:MagneticShielding a owl:Class ;
+    rdfs:label "MagneticShielding" ;
+    rdfs:comment "Magnetic shielding components" ;
+    rdfs:subClassOf qsc:Component .
+
+qsc:MaterialsCompany a owl:Class ;
+    rdfs:label "MaterialsCompany" ;
+    rdfs:comment "Company supplying raw materials for quantum hardware" ;
+    rdfs:subClassOf qsc:Organization .
+
+qsc:NeutralAtom a owl:Class ;
+    rdfs:label "NeutralAtom" ;
+    rdfs:comment "Neutral atom quantum computing technology" ;
+    rdfs:subClassOf qsc:QuantumModality .
+
+qsc:Northrop_Grumman a qsc:QuantumHardwareCompany ;
+    qsc:lastUpdated "2025-09-16T17:14:27.773294"^^xsd:dateTime ;
+    qsc:name "Northrop Grumman" ;
+    qsc:usesModality qsc:SuperconductingQubit .
+
+qsc:Ocean_SDK__D_Wave_ a qsc:QuantumSDK ;
+    qsc:name "Ocean SDK (D-Wave)" ;
+    qsc:notes "Tailored for optimization problems using D-Wave’s annealing hardware" ;
+    qsc:supportsHardware qsc:D_Wave,
+        qsc:_Quantum,
+        qsc:annealing_ .
+
+qsc:Partnership a owl:Class ;
+    rdfs:label "Partnership" ;
+    rdfs:comment "Business partnership between organizations" .
+
+qsc:PennyLane__Xanadu_ a qsc:QuantumSDK ;
+    qsc:name "PennyLane (Xanadu)" ;
+    qsc:notes "Focuses on quantum machine learning and hybrid workflows" ;
+    qsc:supportsHardware qsc:IBM,
+        qsc:IonQ,
+        qsc:Rigetti,
+        qsc:Xanadu,
+        qsc:_Photonic_,
+        qsc:also,
+        qsc:supports .
+
+qsc:PhotonicQuantum a owl:Class ;
+    rdfs:label "PhotonicQuantum" ;
+    rdfs:comment "Photonic quantum computing technology" ;
+    rdfs:subClassOf qsc:QuantumModality .
+
+<http://quantum-supply-chain.org/ontology#Q#__Microsoft_> a qsc:SoftwareCompany ;
+    qsc:name "Q# (Microsoft)" ;
+    qsc:notes "Language for quantum development; integrates with multiple backends" ;
+    qsc:supportsHardware qsc:Azure,
+        qsc:IonQ,
+        qsc:Pasqal_,
+        qsc:Quantinuum,
+        qsc:Quantum,
+        qsc:_Simulators .
+
+qsc:QCI a qsc:QuantumHardwareCompany ;
+    qsc:lastUpdated "2025-09-16T17:14:27.773008"^^xsd:dateTime ;
+    qsc:name "QCI" ;
+    qsc:usesModality qsc:SuperconductingQubit .
+
+qsc:Qiskit a qsc:SoftwareCompany ;
+    qsc:company "IBM" ;
+    qsc:data_source "Excel update" ;
+    qsc:description "Open-source quantum computing SDK" ;
+    qsc:github "https://github.com/Qiskit" ;
+    qsc:lastUpdated "2025-09-16T17:14:27.776528"^^xsd:dateTime ;
+    qsc:last_updated "2025-09-16T17:14:27.763517" ;
+    qsc:license "Open Source" ;
+    qsc:name "Qiskit" ;
+    qsc:notes "Most popular quantum SDK" ;
+    qsc:product_type "SDK" ;
+    qsc:programming_languages "['Python']" ;
+    qsc:supported_hardware "['IBM Quantum']" ;
+    qsc:website "https://qiskit.org" .
+
+qsc:Qiskit__IBM_ a qsc:QuantumSDK ;
+    qsc:name "Qiskit (IBM)" ;
+    qsc:notes "Open-source SDK for IBM’s superconducting quantum processors" ;
+    qsc:supportsHardware qsc:IBM,
+        qsc:Quantum,
+        qsc:_Superconducting,
+        qsc:qubits_ .
+
+<http://quantum-supply-chain.org/ontology#Qu&Co__merged_with_Pasqal_> a qsc:SoftwareCompany ;
+    qsc:name "Qu&Co (merged with Pasqal)" ;
+    qsc:notes "Develops quantum simulation tools for chemistry and physics" ;
+    qsc:supportsHardware qsc:Pasqal,
+        qsc:_Neutral,
+        qsc:atoms_ .
+
+qsc:QuantumAnnealing a owl:Class ;
+    rdfs:label "QuantumAnnealing" ;
+    rdfs:comment "Quantum annealing technology" ;
+    rdfs:subClassOf qsc:QuantumModality .
+
+qsc:QuantumChip a owl:Class ;
+    rdfs:label "QuantumChip" ;
+    rdfs:comment "Quantum processing unit or chip" ;
+    rdfs:subClassOf qsc:Component .
+
+qsc:QunaSys a qsc:SoftwareCompany ;
+    qsc:name "QunaSys" ;
+    qsc:notes "Focused on quantum chemistry and enterprise solutions" ;
+    qsc:supportsHardware qsc:IBM,
+        qsc:IonQ,
+        qsc:Rigetti .
+
+qsc:Rigetti_Computing a qsc:QuantumHardwareCompany ;
+    qsc:cloud_service true ;
+    qsc:country "USA" ;
+    qsc:data_source "Excel update" ;
+    qsc:description "Full-stack quantum computing" ;
+    qsc:founded_year 2013 ;
+    qsc:lastUpdated "2025-09-16T17:14:27.772526"^^xsd:dateTime,
+        "2025-09-16T17:14:27.775927"^^xsd:dateTime ;
+    qsc:last_updated "2025-09-16T17:14:27.763240" ;
+    qsc:modalities "['SuperconductingQubit']" ;
+    qsc:name "Rigetti Computing" ;
+    qsc:notes "nan" ;
+    qsc:platforms "['Quantum Cloud Services']" ;
+    qsc:qubit_count 80 ;
+    qsc:usesModality qsc:SuperconductingQubit ;
+    qsc:website "https://rigetti.com" .
+
+qsc:SpinQubit a owl:Class ;
+    rdfs:label "SpinQubit" ;
+    rdfs:comment "Spin-based quantum computing technology" ;
+    rdfs:subClassOf qsc:QuantumModality .
+
+qsc:Strangeworks a qsc:SoftwareCompany ;
+    qsc:name "Strangeworks" ;
+    qsc:notes "Quantum-as-a-service platform with multi-hardware support" ;
+    qsc:supportsHardware qsc:Aggregates,
+        qsc:D_Wave,
+        qsc:IBM,
+        qsc:IonQ,
+        qsc:Rigetti,
+        qsc:access .
+
+qsc:Sumitomo_Electric_Industries a qsc:ComponentSupplier ;
+    qsc:applications "Quantum logistics, magnets" ;
+    qsc:clients "['Pasqal', 'Japanese labs']" ;
+    qsc:component_types "HTS wire" ;
+    qsc:country "Japan" ;
+    qsc:data_source "Excel update" ;
+    qsc:lastUpdated "2025-09-16T17:14:27.776227"^^xsd:dateTime ;
+    qsc:last_updated "2025-09-16T17:14:27.763411" ;
+    qsc:materials_supplied "HTS wire, Nb₃Sn" ;
+    qsc:name "Sumitomo Electric Industries" ;
+    qsc:notes "Partnership with Pasqal" ;
+    qsc:technical_specs "HTS wire optimization" ;
+    qsc:website "https://global-sei.com" .
+
+qsc:SuperPower_Inc_ a qsc:ComponentSupplier ;
+    qsc:applications "High-field systems, cryogenics" ;
+    qsc:clients "['Tokamak Energy', 'DOE labs']" ;
+    qsc:component_types "HTS tape, high-field magnets" ;
+    qsc:country "USA" ;
+    qsc:data_source "Excel update" ;
+    qsc:lastUpdated "2025-09-16T17:14:27.776378"^^xsd:dateTime ;
+    qsc:last_updated "2025-09-16T17:14:27.763446" ;
+    qsc:materials_supplied "YBCO tape, superconducting wire" ;
+    qsc:name "SuperPower Inc." ;
+    qsc:notes "$80M DOE support" ;
+    qsc:technical_specs "High current capacity" ;
+    qsc:website "https://superpower-inc.com" .
+
+qsc:Super_Conductor_Materials_Inc_ a qsc:ComponentSupplier ;
+    qsc:applications "Quantum chips, thin films" ;
+    qsc:clients "['IBM', 'Google', 'Rigetti']" ;
+    qsc:component_types "Sputtering targets, thin-film superconductors" ;
+    qsc:country "USA" ;
+    qsc:data_source "Excel update" ;
+    qsc:lastUpdated "2025-09-16T17:14:27.776066"^^xsd:dateTime ;
+    qsc:last_updated "2025-09-16T17:14:27.763366" ;
+    qsc:materials_supplied "NbTi, Nb₃Sn, superconducting films" ;
+    qsc:name "Super Conductor Materials Inc." ;
+    qsc:notes "Primary supplier for IBM/Google" ;
+    qsc:technical_specs "Sputtering targets for qubits" ;
+    qsc:website "https://scmat.com" .
+
+qsc:SuperconductingMaterial a owl:Class ;
+    rdfs:label "SuperconductingMaterial" ;
+    rdfs:comment "Materials used in superconducting quantum systems" ;
+    rdfs:subClassOf qsc:Component .
+
+qsc:SupplyRelationship a owl:Class ;
+    rdfs:label "SupplyRelationship" ;
+    rdfs:comment "Supply relationship between companies" .
+
+qsc:TKET__Quantinuum_ a qsc:QuantumSDK ;
+    qsc:name "TKET (Quantinuum)" ;
+    qsc:notes "Hardware-agnostic compiler with optimization across multiple platforms" ;
+    qsc:supportsHardware qsc:IBM,
+        qsc:IonQ,
+        qsc:Quantinuum,
+        qsc:_Trapped,
+        qsc:also,
+        qsc:ions_,
+        qsc:supports .
+
+qsc:Tape a owl:Class ;
+    rdfs:label "Tape" ;
+    rdfs:comment "High-temperature superconducting tape" ;
+    rdfs:subClassOf qsc:Component .
+
+qsc:TrappedIon a owl:Class ;
+    rdfs:label "TrappedIon" ;
+    rdfs:comment "Trapped ion quantum computing technology" ;
+    rdfs:subClassOf qsc:QuantumModality .
+
+qsc:Wire a owl:Class ;
+    rdfs:label "Wire" ;
+    rdfs:comment "Specialized wire for quantum applications" ;
+    rdfs:subClassOf qsc:Component .
+
+qsc:Zapata_Computing a qsc:SoftwareCompany ;
+    qsc:name "Zapata Computing" ;
+    qsc:notes "Orquestra platform for hybrid quantum workflows" ;
+    qsc:supportsHardware qsc:Honeywell,
+        qsc:IBM,
+        qsc:IonQ,
+        qsc:Rigetti .
+
+qsc:applicationArea a owl:DatatypeProperty ;
+    rdfs:label "applicationArea" ;
+    rdfs:comment "Primary application area" ;
+    rdfs:range xsd:string .
+
+qsc:clientOf a owl:ObjectProperty ;
+    rdfs:label "clientOf" ;
+    rdfs:comment "Organization is client of supplier" ;
+    rdfs:domain qsc:Organization ;
+    rdfs:range qsc:ComponentSupplier .
+
+qsc:companyStage a owl:DatatypeProperty ;
+    rdfs:label "companyStage" ;
+    rdfs:comment "Company stage (startup, established, etc.)" ;
+    rdfs:range xsd:string .
+
+qsc:country a owl:DatatypeProperty ;
+    rdfs:label "country" ;
+    rdfs:comment "Country of origin/operation" ;
+    rdfs:range xsd:string .
+
+qsc:criticalTemperature a owl:DatatypeProperty ;
+    rdfs:label "criticalTemperature" ;
+    rdfs:comment "Superconducting critical temperature" ;
+    rdfs:range xsd:decimal .
+
+qsc:currentCapacity a owl:DatatypeProperty ;
+    rdfs:label "currentCapacity" ;
+    rdfs:comment "Current carrying capacity" ;
+    rdfs:range xsd:decimal .
+
+qsc:dataSource a owl:DatatypeProperty ;
+    rdfs:label "dataSource" ;
+    rdfs:comment "Source of the information" ;
+    rdfs:range xsd:string .
+
+qsc:description a owl:DatatypeProperty ;
+    rdfs:label "description" ;
+    rdfs:comment "Detailed description" ;
+    rdfs:range xsd:string .
+
+qsc:developsSDK a owl:ObjectProperty ;
+    rdfs:label "developsSDK" ;
+    rdfs:comment "Software company develops SDK" ;
+    rdfs:domain qsc:SoftwareCompany ;
+    rdfs:range qsc:QuantumSDK .
+
+qsc:employeeCount a owl:DatatypeProperty ;
+    rdfs:label "employeeCount" ;
+    rdfs:comment "Number of employees" ;
+    rdfs:range xsd:integer .
+
+qsc:foundedYear a owl:DatatypeProperty ;
+    rdfs:label "foundedYear" ;
+    rdfs:comment "Year company was founded" ;
+    rdfs:range xsd:gYear .
+
+qsc:fundingAmount a owl:DatatypeProperty ;
+    rdfs:label "fundingAmount" ;
+    rdfs:comment "Amount of funding received" ;
+    rdfs:range xsd:decimal .
+
+qsc:hasClient a owl:ObjectProperty ;
+    rdfs:label "hasClient" ;
+    rdfs:comment "Supplier has client relationship" ;
+    rdfs:domain qsc:ComponentSupplier ;
+    rdfs:range qsc:Organization .
+
+qsc:lastUpdated a owl:DatatypeProperty ;
+    rdfs:label "lastUpdated" ;
+    rdfs:comment "Last time information was updated" ;
+    rdfs:range xsd:dateTime .
+
+qsc:license a owl:DatatypeProperty ;
+    rdfs:label "license" ;
+    rdfs:comment "Software license type" ;
+    rdfs:range xsd:string .
+
+qsc:locatedIn a owl:ObjectProperty ;
+    rdfs:label "locatedIn" ;
+    rdfs:comment "Organization is located in country" ;
+    rdfs:domain qsc:Organization ;
+    rdfs:range qsc:Country .
+
+qsc:marketFocus a owl:DatatypeProperty ;
+    rdfs:label "marketFocus" ;
+    rdfs:comment "Primary market focus" ;
+    rdfs:range xsd:string .
+
+qsc:materialType a owl:DatatypeProperty ;
+    rdfs:label "materialType" ;
+    rdfs:comment "Type of material (e.g., NbTi, Nb₃Sn, MgB₂)" ;
+    rdfs:range xsd:string .
+
+qsc:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:comment "Official company/product name" ;
+    rdfs:range xsd:string .
+
+qsc:notes a owl:DatatypeProperty ;
+    rdfs:label "notes" ;
+    rdfs:comment "Additional notes or details" ;
+    rdfs:range xsd:string .
+
+qsc:operationalStatus a owl:DatatypeProperty ;
+    rdfs:label "operationalStatus" ;
+    rdfs:comment "Current operational status" ;
+    rdfs:range xsd:string .
+
+qsc:partneredWith a owl:ObjectProperty ;
+    rdfs:label "partneredWith" ;
+    rdfs:comment "Partnership between organizations" ;
+    rdfs:domain qsc:Organization ;
+    rdfs:range qsc:Organization .
+
+qsc:producesComponent a owl:ObjectProperty ;
+    rdfs:label "producesComponent" ;
+    rdfs:comment "Supplier produces specific component type" ;
+    rdfs:domain qsc:ComponentSupplier ;
+    rdfs:range qsc:Component .
+
+qsc:productType a owl:DatatypeProperty ;
+    rdfs:label "productType" ;
+    rdfs:comment "Type of product or service" ;
+    rdfs:range xsd:string .
+
+qsc:publicTicker a owl:DatatypeProperty ;
+    rdfs:label "publicTicker" ;
+    rdfs:comment "Stock ticker symbol if public" ;
+    rdfs:range xsd:string .
+
+qsc:region a owl:DatatypeProperty ;
+    rdfs:label "region" ;
+    rdfs:comment "Geographic region" ;
+    rdfs:range xsd:string .
+
+qsc:requiresComponent a owl:ObjectProperty ;
+    rdfs:label "requiresComponent" ;
+    rdfs:comment "Platform requires specific component" ;
+    rdfs:domain qsc:QuantumPlatform ;
+    rdfs:range qsc:Component .
+
+qsc:sdkLanguage a owl:DatatypeProperty ;
+    rdfs:label "sdkLanguage" ;
+    rdfs:comment "Programming language for SDK" ;
+    rdfs:range xsd:string .
+
+qsc:suppliesComponentTo a owl:ObjectProperty ;
+    rdfs:label "suppliesComponentTo" ;
+    rdfs:comment "Component supplier provides components to hardware company" ;
+    rdfs:domain qsc:ComponentSupplier ;
+    rdfs:range qsc:QuantumHardwareCompany .
+
+qsc:supportsHardware a owl:ObjectProperty ;
+    rdfs:label "supportsHardware" ;
+    rdfs:comment "SDK supports specific hardware platform" ;
+    rdfs:domain qsc:QuantumSDK ;
+    rdfs:range qsc:QuantumPlatform .
+
+qsc:temperatureRange a owl:DatatypeProperty ;
+    rdfs:label "temperatureRange" ;
+    rdfs:comment "Operating temperature range" ;
+    rdfs:range xsd:string .
+
+qsc:usesModality a owl:ObjectProperty ;
+    rdfs:label "usesModality" ;
+    rdfs:comment "Hardware company uses specific quantum modality" ;
+    rdfs:domain qsc:QuantumHardwareCompany ;
+    rdfs:range qsc:QuantumModality .
+
+qsc:website a owl:DatatypeProperty ;
+    rdfs:label "website" ;
+    rdfs:comment "Official website URL" ;
+    rdfs:range xsd:anyURI .
+
+qsc:wireType a owl:DatatypeProperty ;
+    rdfs:label "wireType" ;
+    rdfs:comment "Type of superconducting wire" ;
+    rdfs:range xsd:string .
+
+qsc:Chinese qsc:clientOf qsc:Western_Superconducting_Technologies_Co___Ltd___China_ .
+
+qsc:Country a owl:Class ;
+    rdfs:label "Country" ;
+    rdfs:comment "Country where organization is located" ;
+    rdfs:subClassOf qsc:Region .
+
+qsc:Design qsc:clientOf qsc:Accurate_Wire__USA_ .
+
+qsc:Energy qsc:clientOf qsc:SuperPower_Inc___USA_ .
+
+qsc:Hitachi qsc:clientOf qsc:JASTEC__Japan_Superconductor_Tech_ .
+
+<http://quantum-supply-chain.org/ontology#Indirect:> qsc:clientOf qsc:NEXANS__France_ .
+
+qsc:Internal qsc:clientOf qsc:Hitachi__Ltd_ .
+
+<http://quantum-supply-chain.org/ontology#Partner:> qsc:clientOf qsc:Sumitomo_Electric_Industries__Ltd___Japan_ .
+
+<http://quantum-supply-chain.org/ontology#R&D> qsc:clientOf qsc:Hitachi__Ltd_ .
+
+qsc:Region a owl:Class ;
+    rdfs:label "Region" ;
+    rdfs:comment "Geographic region" .
+
+qsc:Research qsc:clientOf qsc:evico_GmbH__Germany_ .
+
+qsc:SpinQ qsc:clientOf qsc:Superconductor_Technologies_Inc_ .
+
+qsc:Tokamak qsc:clientOf qsc:SuperPower_Inc___USA_ .
+
+qsc:_France_ qsc:clientOf qsc:Sumitomo_Electric_Industries__Ltd___Japan_ .
+
+qsc:cryogenic qsc:clientOf qsc:evico_GmbH__Germany_ .
+
+qsc:institutions qsc:clientOf qsc:evico_GmbH__Germany_ .
+
+qsc:integrators qsc:clientOf qsc:evico_GmbH__Germany_ .
+
+qsc:providers qsc:clientOf qsc:NEXANS__France_ .
+
+qsc:research qsc:clientOf qsc:Accurate_Wire__USA_ .
+
+qsc:system qsc:clientOf qsc:evico_GmbH__Germany_ .
+
+qsc:Google qsc:clientOf qsc:Super_Conductor_Materials__Inc___USA_ .
+
+qsc:Japanese qsc:clientOf qsc:JASTEC__Japan_Superconductor_Tech_,
+        qsc:Sumitomo_Electric_Industries__Ltd___Japan_ .
+
+qsc:Origin qsc:clientOf qsc:Superconductor_Technologies_Inc_,
+        qsc:Western_Superconducting_Technologies_Co___Ltd___China_ .
+
+qsc:Pasqal qsc:clientOf qsc:Sumitomo_Electric_Industries__Ltd___Japan_ .
+
+qsc:QuantumPlatform a owl:Class ;
+    rdfs:label "QuantumPlatform" ;
+    rdfs:comment "Complete quantum computing platform or system" .
+
+qsc:Seeqc a qsc:QuantumHardwareCompany ;
+    qsc:clientOf qsc:Super_Conductor_Materials__Inc___USA_,
+        qsc:Superconductor_Technologies_Inc_ ;
+    qsc:lastUpdated "2025-09-16T17:14:27.772756"^^xsd:dateTime ;
+    qsc:name "Seeqc" ;
+    qsc:usesModality qsc:SuperconductingQubit .
+
+qsc:infrastructure qsc:clientOf qsc:MetOx_Technologies__Inc_,
+        qsc:NEXANS__France_ .
+
+qsc:national qsc:clientOf qsc:Sam_Dong_Inc___USA_,
+        qsc:Western_Superconducting_Technologies_Co___Ltd___China_ .
+
+qsc:projects qsc:clientOf qsc:Hyper_Tech_Research__Inc___USA_,
+        qsc:MetOx_Technologies__Inc_ .
+
+qsc:DOE_funded qsc:clientOf qsc:Hyper_Tech_Research__Inc___USA_,
+        qsc:MetOx_Technologies__Inc_,
+        qsc:SuperPower_Inc___USA_ .
+
+qsc:Hitachi__Ltd_ a qsc:ComponentSupplier ;
+    qsc:hasClient qsc:Internal,
+        <http://quantum-supply-chain.org/ontology#R&D>,
+        qsc:quantum ;
+    qsc:name "Hitachi, Ltd." ;
+    qsc:notes "Hitachi develops its own quantum computing platforms" .
+
+qsc:D_Wave qsc:clientOf qsc:Hyper_Tech_Research__Inc___USA_,
+        qsc:Sam_Dong_Inc___USA_ .
+
+qsc:JASTEC__Japan_Superconductor_Tech_ a qsc:ComponentSupplier ;
+    qsc:country "Japan" ;
+    qsc:hasClient qsc:Hitachi,
+        qsc:Japanese,
+        <http://quantum-supply-chain.org/ontology#Likely:>,
+        qsc:labs ;
+    qsc:name "JASTEC (Japan Superconductor Tech)" ;
+    qsc:notes "Manufactures superconducting wire for magnets and cryogenic systems" .
+
+<http://quantum-supply-chain.org/ontology#Likely:> qsc:clientOf qsc:Accurate_Wire__USA_,
+        qsc:Hyper_Tech_Research__Inc___USA_,
+        qsc:JASTEC__Japan_Superconductor_Tech_,
+        qsc:Sam_Dong_Inc___USA_ .
+
+qsc:MetOx_Technologies__Inc_ a qsc:ComponentSupplier ;
+    qsc:hasClient qsc:DOE_funded,
+        qsc:infrastructure,
+        qsc:projects,
+        qsc:quantum ;
+    qsc:name "MetOx Technologies, Inc." ;
+    qsc:notes "HTS wire supplier with $80M DOE support for quantum-related use" .
+
+qsc:Super_Conductor_Materials__Inc___USA_ a qsc:ComponentSupplier ;
+    qsc:country "USA" ;
+    qsc:hasClient qsc:Google,
+        qsc:IBM,
+        qsc:Rigetti,
+        qsc:Seeqc ;
+    qsc:name "Super Conductor Materials, Inc. (USA)" ;
+    qsc:notes "Supplies sputtering targets for thin-film superconducting qubits" .
+
+qsc:Superconductor_Technologies_Inc_ a qsc:ComponentSupplier ;
+    qsc:hasClient qsc:Origin,
+        qsc:Quantum,
+        qsc:Seeqc,
+        qsc:SpinQ ;
+    qsc:name "Superconductor Technologies Inc." ;
+    qsc:notes "Develops HTS materials for quantum chip fabrication" .
+
+qsc:quantum qsc:clientOf qsc:Hitachi__Ltd_,
+        qsc:MetOx_Technologies__Inc_,
+        qsc:Sumitomo_Electric_Industries__Ltd___Japan_,
+        qsc:SuperPower_Inc___USA_ .
+
+qsc:Hyper_Tech_Research__Inc___USA_ a qsc:ComponentSupplier ;
+    qsc:country "USA" ;
+    qsc:hasClient qsc:DOE_funded,
+        qsc:D_Wave,
+        qsc:IBM,
+        <http://quantum-supply-chain.org/ontology#Likely:>,
+        qsc:projects ;
+    qsc:name "Hyper Tech Research, Inc. (USA)" ;
+    qsc:notes "Develops cryogenic superconducting wire for fusion and quantum systems" .
+
+qsc:NEXANS__France_ a qsc:ComponentSupplier ;
+    qsc:country "France" ;
+    qsc:hasClient <http://quantum-supply-chain.org/ontology#Indirect:>,
+        qsc:Quantum,
+        qsc:infrastructure,
+        qsc:labs,
+        qsc:providers ;
+    qsc:name "NEXANS (France)" ;
+    qsc:notes "Provides superconducting cables for energy and data centers" .
+
+qsc:Sam_Dong_Inc___USA_ a qsc:ComponentSupplier ;
+    qsc:country "USA" ;
+    qsc:hasClient qsc:D_Wave,
+        qsc:IBM,
+        <http://quantum-supply-chain.org/ontology#Likely:>,
+        qsc:labs,
+        qsc:national ;
+    qsc:name "Sam Dong Inc. (USA)" ;
+    qsc:notes "Manufactures MgB₂ wire used in cryogenic systems and superconducting magnets" .
+
+qsc:SuperPower_Inc___USA_ a qsc:ComponentSupplier ;
+    qsc:country "USA" ;
+    qsc:hasClient qsc:DOE_funded,
+        qsc:Energy,
+        qsc:Tokamak,
+        qsc:labs,
+        qsc:quantum ;
+    qsc:name "SuperPower Inc. (USA)" ;
+    qsc:notes "HTS tape supplier for high-field magnets and cryogenic systems" .
+
+qsc:Western_Superconducting_Technologies_Co___Ltd___China_ a qsc:ComponentSupplier ;
+    qsc:country "China" ;
+    qsc:hasClient qsc:Chinese,
+        qsc:Origin,
+        qsc:Quantum,
+        qsc:labs,
+        qsc:national ;
+    qsc:name "Western Superconducting Technologies Co., Ltd. (China)" ;
+    qsc:notes "Major supplier of NbTi/Nb₃Sn wire for superconducting quantum chips" .
+
+qsc:evico_GmbH__Germany_ a qsc:ComponentSupplier ;
+    qsc:country "Germany" ;
+    qsc:hasClient qsc:Research,
+        qsc:cryogenic,
+        qsc:institutions,
+        qsc:integrators,
+        qsc:system ;
+    qsc:name "evico GmbH (Germany)" ;
+    qsc:notes "Specializes in magnetic shielding and cryogenic bearings" .
+
+qsc:Accurate_Wire__USA_ a qsc:ComponentSupplier ;
+    qsc:country "USA" ;
+    qsc:hasClient qsc:Design,
+        qsc:IBM,
+        <http://quantum-supply-chain.org/ontology#Likely:>,
+        qsc:Quantum,
+        qsc:labs,
+        qsc:research ;
+    qsc:name "Accurate Wire (USA)" ;
+    qsc:notes "Produces NbTi and Nb₃Sn wire used in superconducting circuits" .
+
+qsc:Sumitomo_Electric_Industries__Ltd___Japan_ a qsc:ComponentSupplier ;
+    qsc:country "Japan" ;
+    qsc:hasClient qsc:Japanese,
+        <http://quantum-supply-chain.org/ontology#Partner:>,
+        qsc:Pasqal,
+        qsc:_France_,
+        qsc:labs,
+        qsc:quantum ;
+    qsc:name "Sumitomo Electric Industries, Ltd. (Japan)" ;
+    qsc:notes "Supplies HTS wire and supports quantum logistics optimization" .
+
+qsc:Quantum qsc:clientOf qsc:Accurate_Wire__USA_,
+        qsc:NEXANS__France_,
+        qsc:Superconductor_Technologies_Inc_,
+        qsc:Western_Superconducting_Technologies_Co___Ltd___China_ .
+
+qsc:labs qsc:clientOf qsc:Accurate_Wire__USA_,
+        qsc:JASTEC__Japan_Superconductor_Tech_,
+        qsc:NEXANS__France_,
+        qsc:Sam_Dong_Inc___USA_,
+        qsc:Sumitomo_Electric_Industries__Ltd___Japan_,
+        qsc:SuperPower_Inc___USA_,
+        qsc:Western_Superconducting_Technologies_Co___Ltd___China_ .
+
+qsc:QuantumModality a owl:Class ;
+    rdfs:label "QuantumModality" ;
+    rdfs:comment "Different approaches to quantum computing" .
+
+qsc:QuantumSDK a owl:Class ;
+    rdfs:label "QuantumSDK" ;
+    rdfs:comment "Software development kit for quantum programming" .
+
+qsc:Rigetti qsc:clientOf qsc:Super_Conductor_Materials__Inc___USA_ .
+
+qsc:SuperconductingQubit a qsc:QuantumModality,
+        owl:Class ;
+    rdfs:label "SuperconductingQubit" ;
+    rdfs:comment "Superconducting-based quantum computing technology" ;
+    rdfs:subClassOf qsc:QuantumModality .
+
+qsc:Component a owl:Class ;
+    rdfs:label "Component" ;
+    rdfs:comment "Physical component used in quantum systems" .
+
+qsc:Organization a owl:Class ;
+    rdfs:label "Organization" ;
+    rdfs:comment "Base class for all organizations in the quantum supply chain" .
+
+qsc:QuantumHardwareCompany a owl:Class ;
+    rdfs:label "QuantumHardwareCompany" ;
+    rdfs:comment "Company developing quantum computing hardware" ;
+    rdfs:subClassOf qsc:Organization .
+
+qsc:SoftwareCompany a owl:Class ;
+    rdfs:label "SoftwareCompany" ;
+    rdfs:comment "Company developing quantum software/SDKs" ;
+    rdfs:subClassOf qsc:Organization .
+
+qsc:IBM a qsc:QuantumHardwareCompany ;
+    qsc:clientOf qsc:Accurate_Wire__USA_,
+        qsc:Hyper_Tech_Research__Inc___USA_,
+        qsc:Sam_Dong_Inc___USA_,
+        qsc:Super_Conductor_Materials__Inc___USA_ ;
+    qsc:lastUpdated "2025-09-16T17:14:27.772083"^^xsd:dateTime ;
+    qsc:name "IBM" ;
+    qsc:usesModality qsc:SuperconductingQubit .
+
+qsc:ComponentSupplier a owl:Class ;
+    rdfs:label "ComponentSupplier" ;
+    rdfs:comment "Company supplying components for quantum systems" ;
+    rdfs:subClassOf qsc:Organization .
+
